@@ -37,7 +37,6 @@ fetch('data/bank.json')
     renderOverview()
     renderTable()
     renderCourses()
-    renderDownloads()
     renderFoot()
   })
   .catch(() => {
@@ -98,55 +97,6 @@ function renderOverview() {
       <span class="bar__val" style="text-align:left; font-size:15px; color:var(--accent); font-weight:600">${n}</span>
       <span class="bar__name" style="white-space:normal">${text}</span>
     </div>`).join('')
-}
-
-/* ─────────────────────────── скачивание ─────────────────────────── */
-
-/* Один архив — это и есть «выгрузить всё». Отдельные файлы под ним —
-   те же данные по частям, если целиком не нужно. */
-const FILES = [
-  ['data/bank-dump.zip', 'Весь дамп одним архивом', 'ZIP · 3,5 МБ', 'содержимое 857 кейсов, курсы, справочники, организации и INDEX.md — это и есть «всё»', true],
-  ['data/INDEX.md', 'Оглавление дампа', 'Markdown · 4 КБ', 'что внутри, как читать поля, чего в дампе нет'],
-  ['data/bank.md', 'Читаемая выгрузка', 'Markdown · 174 КБ', 'сводка, курсы, кейсы по семействам — влезает в диалог целиком'],
-  ['data/bank.json', 'Тренажёры и курсы', 'JSON · 372 КБ', 'со связями «кейс ↔ курс»'],
-  ['data/bank_working.csv', 'Только рабочие кейсы', 'CSV · 125 КБ', '740 строк, семь колонок'],
-  ['data/bank.csv', 'Все кейсы со всеми полями', 'CSV · 169 КБ', '857 строк, включая архив и копии'],
-  ['data/courses.json', 'Курсы целиком', 'JSON · 24 КБ', 'модули, привязанные тесты, адаптивные шаги'],
-  ['data/reference.json', 'Справочники', 'JSON · 50 КБ', 'темы, стили, типы тестов и вопросов, роли, города'],
-  ['data/orgs.json', 'Организации', 'JSON · 68 КБ', 'компании, подразделения, учебные группы'],
-]
-
-function renderDownloads() {
-  $('#downloads').innerHTML = FILES.map(([href, title, meta, sub, main]) => `
-    <a class="dl__item${main ? ' dl__item--main' : ''}" href="${href}" download>
-      <span class="dl__icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
-      </span>
-      <span class="dl__text"><b>${title}</b><span>${sub}</span></span>
-      <span class="dl__meta">${meta}</span>
-    </a>`).join('')
-}
-
-/** CSV по текущей выборке — то, что видно на экране после фильтров. */
-function downloadSelection() {
-  const rows = sorted(state.tests.filter(matches))
-  const head = ['сервер', 'id', 'название', 'тема', 'семейство', 'шагов', 'оценивается', 'курсы', 'флаги']
-  const cell = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`
-  const csv = [head.join(';')].concat(rows.map((t) => [
-    t.host, t.id, t.name, t.topic, t.family, t.steps ?? '', t.scored ?? '',
-    t.courses.join(' '), t.flags.join(', '),
-  ].map(cell).join(';'))).join('\n')
-  saveFile(new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' }),
-    `банк-выборка-${rows.length}.csv`)
-}
-
-function saveFile(blob, name) {
-  const url = URL.createObjectURL(blob)
-  const a = document.createElement('a')
-  a.href = url
-  a.download = name
-  a.click()
-  setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
 /* ─────────────────────────── таблица ─────────────────────────── */
@@ -277,7 +227,6 @@ function openPanel(key) {
         : '<p style="font-size:13.5px; color:var(--ink-soft); margin:0">Кейс не подключён ни к одному курсу — его можно взять в новую программу как есть.</p>'}
       <h4>Сценарий</h4>
       <div id="steps"><p style="font-size:13.5px; color:var(--ink-faint); margin:0">Загружаю шаги…</p></div>
-      <a class="dl__btn" href="data/tests/${t.host}-${t.id}.json" download>Скачать кейс (JSON)</a>
     </div>`
   $('#panel').classList.add('is-open')
   $('#backdrop').classList.add('is-open')
@@ -379,7 +328,6 @@ document.querySelectorAll('th[data-sort]').forEach((th) => {
 })
 
 $('#more').addEventListener('click', () => { state.limit += PAGE; renderTable() })
-$('#dlSel').addEventListener('click', downloadSelection)
 $('#backdrop').addEventListener('click', closePanel)
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePanel() })
 
@@ -396,7 +344,10 @@ try {
 } catch (e) { /* приватный режим */ }
 
 function renderFoot() {
-  $('#foot').innerHTML = `Срез ${esc(state.exported)}. Вся выгрузка снимается одной командой —
+  $('#foot').innerHTML = `<b>В архиве:</b> содержимое всех ${state.tests.length} кейсов (шаги сценария, тексты,
+    лабораторные, ответы с пометкой правильных), ${state.courses.length} курсов с модулями и адаптивными шагами,
+    справочники платформы, организации и оглавление INDEX.md. Без пользователей и их результатов.<br><br>
+    Срез ${esc(state.exported)}. Выгрузка снимается одной командой —
     <code>python3 конвейер/spo/export_content_bank.py</code>: она забирает с обоих серверов кейсы с содержимым,
     курсы, справочники и организации, складывает в <code>spo/out/dump/</code> и пакует в архив.
     Чтобы обновить витрину, перезапустите её и скопируйте содержимое дампа в <code>data/</code>.`

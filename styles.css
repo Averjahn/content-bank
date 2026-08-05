@@ -237,6 +237,8 @@ td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:righ
 @media (max-width:860px){
   .top__row{padding:10px 14px; gap:10px;}
   .brand__sub{display:none;}
+  .dl-all{padding:9px 12px;}
+  .dl-all span{display:none;}
   .wrap{padding:16px 14px 50px;}
   /* на телефоне таблица не помещается — строки становятся карточками */
   table, tbody, tr, td{display:block; width:100%;}
@@ -257,33 +259,15 @@ td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:righ
 /* ============================================================
    СКАЧИВАНИЕ И ПРОСМОТР СЦЕНАРИЯ
    ============================================================ */
-.dl{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:10px;}
-.dl__item{
-  display:flex; align-items:center; gap:12px; padding:13px 15px; text-decoration:none;
-  border:1px solid var(--line); border-radius:12px; background:var(--surface); color:var(--ink);
+/* Кнопка ровно одна: скачивается весь дамп, выбирать нечего. */
+.dl-all{
+  display:inline-flex; align-items:center; gap:8px; flex:0 0 auto;
+  padding:9px 16px; border-radius:10px; text-decoration:none;
+  background:var(--accent); color:#fff; font-size:13.5px; font-weight:600;
+  box-shadow:var(--sh-1);
 }
-.dl__item:hover{border-color:var(--accent-line); background:var(--accent-soft);}
-/* главный файл дампа занимает всю ширину — с него и начинают */
-.dl__item--main{grid-column:1 / -1; border-color:var(--accent); background:var(--accent-soft);}
-.dl__item--main .dl__icon{background:var(--accent); color:#fff;}
-.dl__item--main .dl__text b{font-size:15px;}
-.dl__icon{
-  width:34px; height:34px; flex:0 0 auto; display:grid; place-items:center;
-  border-radius:10px; background:var(--accent-soft); color:var(--accent);
-}
-.dl__item:hover .dl__icon{background:var(--accent); color:#fff;}
-.dl__icon svg{width:17px; height:17px;}
-.dl__text{flex:1; min-width:0;}
-.dl__text b{display:block; font-size:14px; font-weight:600;}
-.dl__text span{display:block; font-size:12px; color:var(--ink-soft); line-height:1.4;}
-.dl__meta{
-  flex:0 0 auto; font-family:var(--mono); font-size:11px; color:var(--ink-faint); white-space:nowrap;
-}
-.dl__btn{
-  display:inline-block; margin-top:18px; padding:10px 16px; border-radius:10px;
-  background:var(--accent); color:#fff; font-size:13.5px; font-weight:600; text-decoration:none;
-}
-.dl__btn:hover{background:var(--accent-deep);}
+.dl-all:hover{background:var(--accent-deep);}
+.dl-all svg{width:16px; height:16px;}
 
 .step{border-bottom:1px solid var(--line);}
 .step:last-of-type{border-bottom:none;}

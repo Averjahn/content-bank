@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -36,6 +36,11 @@
       <input id="q" type="search" placeholder="Поиск: нозология, название, id" autocomplete="off" aria-label="Поиск по банку">
     </label>
 
+    <a class="dl-all" href="data/bank-dump.zip" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+      <span>Скачать всё</span>
+    </a>
+
     <button class="icon-btn" id="theme" aria-label="Переключить тему">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 13a8.5 8.5 0 1 1-10-10 7 7 0 0 0 10 10z"/></svg>
     </button>
@@ -53,16 +58,6 @@
         <span>только рабочие · клик открывает список</span>
       </div>
       <div class="card__body"><div class="bars" id="families"></div></div>
-    </div>
-
-    <div class="card">
-      <div class="card__head">
-        <h2>Скачать банк</h2>
-        <span>одна выгрузка, одна команда</span>
-      </div>
-      <div class="card__body">
-        <div class="dl" id="downloads"></div>
-      </div>
     </div>
 
     <div class="card">
@@ -85,7 +80,6 @@
       <div class="filters__sep"></div>
       <select class="chip" id="famSel"><option value="">Все семейства</option></select>
       <span class="count" id="count"></span>
-      <button class="chip" id="dlSel" title="CSV по текущим фильтрам">Скачать выборку</button>
     </div>
 
     <div class="table-wrap">
@@ -122,6 +116,6 @@
 <div class="backdrop" id="backdrop"></div>
 <aside class="panel" id="panel" aria-live="polite"></aside>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
