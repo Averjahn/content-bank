@@ -263,6 +263,10 @@ td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:righ
   border:1px solid var(--line); border-radius:12px; background:var(--surface); color:var(--ink);
 }
 .dl__item:hover{border-color:var(--accent-line); background:var(--accent-soft);}
+/* главный файл дампа занимает всю ширину — с него и начинают */
+.dl__item--main{grid-column:1 / -1; border-color:var(--accent); background:var(--accent-soft);}
+.dl__item--main .dl__icon{background:var(--accent); color:#fff;}
+.dl__item--main .dl__text b{font-size:15px;}
 .dl__icon{
   width:34px; height:34px; flex:0 0 auto; display:grid; place-items:center;
   border-radius:10px; background:var(--accent-soft); color:var(--accent);

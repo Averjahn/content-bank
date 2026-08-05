@@ -1,0 +1,1773 @@
+{
+ "tech2": {
+  "themes": [
+   {
+    "id": 1,
+    "name": "default",
+    "description": "тема по умолчанию",
+    "is_active": true,
+    "title": "общая",
+    "text_body": "тема по умолчанию",
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-11-02T09:28:57.266264Z",
+    "updated_at": "2023-11-02T09:28:57.266264Z"
+   },
+   {
+    "id": 2,
+    "name": "testtheme",
+    "description": "",
+    "is_active": false,
+    "title": "testtheme",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-11-02T09:37:50.685282Z",
+    "updated_at": "2023-11-02T09:37:50.685282Z"
+   },
+   {
+    "id": 3,
+    "name": "Скорая медицинская помощь",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-04-05T10:13:17.006733Z",
+    "updated_at": "2024-04-05T10:13:37.599798Z"
+   },
+   {
+    "id": 4,
+    "name": "Первая помощь",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-04-07T21:47:09.8069Z",
+    "updated_at": "2024-04-16T16:38:54.216961Z"
+   },
+   {
+    "id": 5,
+    "name": "Тесты",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-04-16T16:39:18.020382Z",
+    "updated_at": "2024-04-16T16:39:22.076422Z"
+   },
+   {
+    "id": 6,
+    "name": "Инфекционные заболевания",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-05-17T14:06:43.486347Z",
+    "updated_at": "2024-05-17T14:06:43.486347Z"
+   },
+   {
+    "id": 7,
+    "name": "Акушерство и гинекология",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-05-17T14:07:28.841645Z",
+    "updated_at": "2024-05-17T14:07:28.841645Z"
+   },
+   {
+    "id": 8,
+    "name": "Новая тематика 2",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "constructor2",
+    "updated_by": "constructor2",
+    "created_at": "2024-09-12T16:34:06.864536Z",
+    "updated_at": "2024-09-12T16:34:06.864536Z"
+   },
+   {
+    "id": 9,
+    "name": "урология",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-10-17T18:00:05.572895Z",
+    "updated_at": "2024-10-17T18:00:05.572895Z"
+   },
+   {
+    "id": 10,
+    "name": "Кардиология",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-02-19T10:38:47.34454Z",
+    "updated_at": "2025-02-19T10:38:50.803Z"
+   },
+   {
+    "id": 11,
+    "name": "",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "constructor2",
+    "updated_by": "constructor2",
+    "created_at": "2025-03-09T18:16:56.483923Z",
+    "updated_at": "2025-03-09T18:16:56.483923Z"
+   },
+   {
+    "id": 12,
+    "name": "Немедицина",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-05-07T12:27:48.086026Z",
+    "updated_at": "2025-05-07T12:27:48.086026Z"
+   }
+  ],
+  "styles": [
+   {
+    "id": 9,
+    "name": "Подъемные краны",
+    "description": "Немедицинские сценарии_Краны",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-05-07T12:16:13.000325Z",
+    "updated_at": "2025-05-07T16:35:35.883185Z"
+   },
+   {
+    "id": 8,
+    "name": "ОЗОН-Аптека",
+    "description": "Тест-квизы для ОЗОН-Фарма",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-02-19T13:58:18.886195Z",
+    "updated_at": "2025-02-20T12:51:23.972484Z"
+   },
+   {
+    "id": 7,
+    "name": "СПИД",
+    "description": "Для оформления сценариев для СПИД-центров",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-09-04T09:41:17.716739Z",
+    "updated_at": "2024-09-06T06:30:34.997988Z"
+   },
+   {
+    "id": 6,
+    "name": "Скорая Помощь v2",
+    "description": "Для оформления сценариев СМП и Emergency",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-08-26T09:20:41.438528Z",
+    "updated_at": "2024-08-26T10:10:30.274581Z"
+   },
+   {
+    "id": 5,
+    "name": "КВИЗ",
+    "description": "Тест-квиз для ОЗОН-Фарма",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-07-17T10:30:01.244709Z",
+    "updated_at": "2025-02-25T09:10:44.250644Z"
+   },
+   {
+    "id": 3,
+    "name": "Бытовые сценарии 1",
+    "description": "Градусник и т.п.",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-04-05T14:25:44.020934Z",
+    "updated_at": "2024-04-07T21:42:38.626076Z"
+   },
+   {
+    "id": 2,
+    "name": "Скорая Помощь",
+    "description": "Для оформления сценариев СМП и Emergency",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-04-05T10:19:38.380757Z",
+    "updated_at": "2024-04-05T14:29:59.903076Z"
+   },
+   {
+    "id": 1,
+    "name": "empty style",
+    "description": "пустой стиль по умолчанию",
+    "body": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-01-18T07:58:39.257047Z",
+    "updated_at": "2024-01-18T07:58:39.257047Z"
+   }
+  ],
+  "test-types": [
+   {
+    "id": 1,
+    "name": "1",
+    "description": "1",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-02-19T13:29:56.304741Z",
+    "updated_at": "2023-02-19T13:29:56.304741Z"
+   },
+   {
+    "id": 2,
+    "name": "2",
+    "description": "2",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-02-19T13:29:56.304741Z",
+    "updated_at": "2023-02-19T13:29:56.304741Z"
+   },
+   {
+    "id": 9,
+    "name": "testtype",
+    "description": "testtype",
+    "is_active": false,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-11-02T09:37:24.515937Z",
+    "updated_at": "2023-11-02T09:37:24.515937Z"
+   },
+   {
+    "id": 10,
+    "name": "Базовый",
+    "description": "Базовый",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-08-26T12:54:41.710534Z",
+    "updated_at": "2024-08-26T12:54:41.710534Z"
+   },
+   {
+    "id": 11,
+    "name": "Внешний",
+    "description": "Внешний",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-08-26T12:54:49.270614Z",
+    "updated_at": "2024-08-26T12:54:49.270614Z"
+   },
+   {
+    "id": 12,
+    "name": "",
+    "description": "",
+    "is_active": false,
+    "created_by": "constructor2",
+    "updated_by": "constructor2",
+    "created_at": "2025-03-09T18:32:24.179521Z",
+    "updated_at": "2025-03-09T18:32:24.179521Z"
+   },
+   {
+    "id": 14,
+    "name": "ХЗ ",
+    "description": "хз как добавить ",
+    "is_active": false,
+    "created_by": "constructor2",
+    "updated_by": "constructor2",
+    "created_at": "2025-03-09T18:32:42.568593Z",
+    "updated_at": "2025-03-09T18:32:42.568593Z"
+   }
+  ],
+  "question-types": [
+   {
+    "id": 1,
+    "name": "info",
+    "description": "Информация",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-02-19T13:29:56.674082Z",
+    "updated_at": "2023-02-19T13:29:56.674082Z"
+   },
+   {
+    "id": 2,
+    "name": "question",
+    "description": "Вопрос",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-02-19T13:29:56.674082Z",
+    "updated_at": "2023-02-19T13:29:56.674082Z"
+   },
+   {
+    "id": 3,
+    "name": "feedback",
+    "description": "Отзыв",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-02-19T13:29:56.674082Z",
+    "updated_at": "2023-02-19T13:29:56.674082Z"
+   }
+  ],
+  "specializations": [
+   {
+    "id": 2,
+    "name": "Нейрохирургия",
+    "description": "Нейрохирургические клинические сценарии",
+    "is_active": true,
+    "title": "Нейрохирургия",
+    "subtitle": "",
+    "text_body": "",
+    "image_url": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2026-05-31T23:21:22.5726Z",
+    "updated_at": "2026-05-31T23:21:22.5726Z"
+   },
+   {
+    "id": 1,
+    "name": "Специализация1",
+    "description": "Специализация1",
+    "is_active": true,
+    "title": "",
+    "subtitle": "",
+    "text_body": "",
+    "image_url": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-04-05T14:46:21.443922Z",
+    "updated_at": "2024-04-05T14:46:21.443922Z"
+   }
+  ],
+  "cities": [
+   {
+    "id": 1,
+    "name": "Москва",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:47.07844Z",
+    "updated_at": "2025-02-25T21:18:47.07844Z"
+   },
+   {
+    "id": 2,
+    "name": "Нижний Новгород",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:47.07844Z",
+    "updated_at": "2025-02-25T21:18:47.07844Z"
+   },
+   {
+    "id": 3,
+    "name": "Тюмень",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:47.07844Z",
+    "updated_at": "2025-02-25T21:18:47.07844Z"
+   }
+  ],
+  "hosts": [
+   {
+    "id": 1,
+    "description": "Для Постмана",
+    "is_active": true,
+    "url": "",
+    "available_public_tests": true,
+    "created_at": "2023-11-02T10:58:05.597563Z",
+    "updated_at": "2023-11-02T10:58:05.597563Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 2,
+    "description": "Для локального запуска",
+    "is_active": true,
+    "url": "http://localhost:5173",
+    "available_public_tests": true,
+    "created_at": "2023-11-02T10:58:55.516516Z",
+    "updated_at": "2023-11-02T10:58:55.516516Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 3,
+    "description": "Для билдов на гитхабе",
+    "is_active": true,
+    "url": "https://1305a.github.io",
+    "available_public_tests": true,
+    "created_at": "2023-11-02T11:19:27.661613Z",
+    "updated_at": "2023-11-02T11:19:27.661613Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 4,
+    "description": "Сайт мед гейм",
+    "is_active": true,
+    "url": "https://edu.med-game.ru",
+    "available_public_tests": true,
+    "created_at": "2024-04-05T09:07:53.160375Z",
+    "updated_at": "2024-04-05T09:10:04.358017Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 5,
+    "description": "",
+    "is_active": true,
+    "url": "http://localhost:5174",
+    "available_public_tests": true,
+    "created_at": "2024-04-05T11:37:34.079318Z",
+    "updated_at": "2024-04-05T11:37:34.079318Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 6,
+    "description": "Для мобильного тестирования",
+    "is_active": true,
+    "url": "https://med-testing.ru.tuna.am",
+    "available_public_tests": true,
+    "created_at": "2025-04-24T10:24:18.569096Z",
+    "updated_at": "2025-04-24T10:24:18.569096Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 7,
+    "description": "Сайт медгейм",
+    "is_active": true,
+    "url": "https://med-game.ru",
+    "available_public_tests": true,
+    "created_at": "2025-07-10T14:13:29.209283Z",
+    "updated_at": "2025-07-10T14:13:29.209283Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 8,
+    "description": "ЦИТО им Приорова",
+    "is_active": true,
+    "url": "https://edu.cito-priorov.ru",
+    "available_public_tests": true,
+    "created_at": "2025-07-10T14:17:12.062962Z",
+    "updated_at": "2025-07-10T14:17:12.062962Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   }
+  ],
+  "roles": [
+   {
+    "id": 1,
+    "name": "guest",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь без логина-пароля (только кука и сессия)",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 2,
+    "name": "user-part",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем. Доступ к эндпоинтам юзеров",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 3,
+    "name": "public-tests",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем. Доступ к публичным сценариям",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 4,
+    "name": "some-tests",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем. Доступ к некоторым непубличным сценариям",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 5,
+    "name": "content",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, имеющий доступ для создания и редактирования сценариев",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 6,
+    "name": "admin-part",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, доступ к админским эндпоинтам",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 7,
+    "name": "manage-users",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, редактировать юзеров",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 8,
+    "name": "manage-roles",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, редактировать роли",
+    "created_at": "2023-02-19T13:29:56.391963Z",
+    "updated_at": "2023-02-19T13:29:56.391963Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 9,
+    "name": "voting-admin",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь с логином-паролем, создавать голосовалки ",
+    "created_at": "2023-11-29T16:48:33.987753Z",
+    "updated_at": "2023-11-29T16:48:33.987753Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 11,
+    "name": "group-reporter",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "смотреть отчеты по группе",
+    "created_at": "2025-02-25T21:18:46.336504Z",
+    "updated_at": "2025-02-25T21:18:46.336504Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 12,
+    "name": "division-reporter",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "смотреть отчеты по отделу",
+    "created_at": "2025-02-25T21:18:46.336504Z",
+    "updated_at": "2025-02-25T21:18:46.336504Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   }
+  ],
+  "permissions": [
+   {
+    "id": 1,
+    "name": "permission-guest",
+    "description": "пользователь без логина-пароля (только кука и сессия)",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 2,
+    "name": "permission-user-part",
+    "description": "пользователь c логином-паролем. Доступ к эндпоинтам юзеров",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 3,
+    "name": "permission-public-tests",
+    "description": "пользователь c логином-паролем. Доступ к публичным сценариям",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 4,
+    "name": "permission-some-tests",
+    "description": "пользователь c логином-паролем. Доступ к некоторым непубличным сценариям",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 5,
+    "name": "permission-content",
+    "description": "пользователь c логином-паролем, имеющий доступ для создания и редактирования сценариев",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 6,
+    "name": "permission-admin-part",
+    "description": "пользователь c логином-паролем, доступ к админским эндпоинтам",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 7,
+    "name": "permission-manage-users",
+    "description": "пользователь c логином-паролем, редактировать юзеров",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 8,
+    "name": "permission-manage-roles",
+    "description": "пользователь c логином-паролем, редактировать роли",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 9,
+    "name": "permission-report-viewer",
+    "description": "репортер - отчеты",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 10,
+    "name": "permission-voting-admin",
+    "description": "админ голосовалки",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.098909Z",
+    "updated_at": "2025-02-25T21:18:46.098909Z"
+   },
+   {
+    "id": 11,
+    "name": "view-group-report",
+    "description": "просматривать отчеты по группе",
+    "is_active": true,
+    "required_entity": "group",
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.336504Z",
+    "updated_at": "2025-02-25T21:18:46.336504Z"
+   },
+   {
+    "id": 12,
+    "name": "view-division-report",
+    "description": "просматривать отчеты по отделу",
+    "is_active": true,
+    "required_entity": "division",
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-25T21:18:46.336504Z",
+    "updated_at": "2025-02-25T21:18:46.336504Z"
+   }
+  ]
+ },
+ "dev2": {
+  "themes": [
+   {
+    "id": 1,
+    "name": "First one",
+    "description": "",
+    "is_active": false,
+    "title": "общая",
+    "text_body": "",
+    "created_by": "seed",
+    "updated_by": "admin",
+    "created_at": "2023-09-17T17:32:36.136833Z",
+    "updated_at": "2023-10-23T10:21:15.986113Z"
+   },
+   {
+    "id": 28,
+    "name": "Внутренние болезни",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-09-21T06:18:57.718436Z",
+    "updated_at": "2024-01-16T13:56:13.993089Z"
+   },
+   {
+    "id": 38,
+    "name": "Неврология",
+    "description": "",
+    "is_active": true,
+    "title": "Неврология",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-09-22T07:31:11.179212Z",
+    "updated_at": "2023-10-23T10:20:41.325021Z"
+   },
+   {
+    "id": 46,
+    "name": "Скорая медицинская помощь",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-11-07T15:27:19.758858Z",
+    "updated_at": "2024-04-05T10:12:55.307441Z"
+   },
+   {
+    "id": 47,
+    "name": "Тесты",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-12-05T08:58:18.302455Z",
+    "updated_at": "2023-12-05T08:58:23.237546Z"
+   },
+   {
+    "id": 48,
+    "name": "Акушерство и гинекология",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-01-16T13:56:33.034552Z",
+    "updated_at": "2024-02-07T05:27:27.317973Z"
+   },
+   {
+    "id": 50,
+    "name": "Первая помощь",
+    "description": "",
+    "is_active": true,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-02-15T07:54:21.423546Z",
+    "updated_at": "2024-02-15T07:54:37.550371Z"
+   },
+   {
+    "id": 51,
+    "name": "Инфекционные заболевания",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-03-16T18:14:38.983268Z",
+    "updated_at": "2024-03-16T18:14:38.983268Z"
+   },
+   {
+    "id": 52,
+    "name": "Ветеринария",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-10-22T14:20:40.602827Z",
+    "updated_at": "2024-10-22T14:20:40.602827Z"
+   },
+   {
+    "id": 53,
+    "name": "Не медицина 1",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-12-06T16:19:14.267821Z",
+    "updated_at": "2024-12-06T16:19:14.267821Z"
+   },
+   {
+    "id": 54,
+    "name": "Новая тематика 2",
+    "description": "",
+    "is_active": false,
+    "title": "",
+    "text_body": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-12-06T17:55:15.807099Z",
+    "updated_at": "2024-12-06T17:55:15.807099Z"
+   }
+  ],
+  "styles": [
+   {
+    "id": 37,
+    "name": "Квесты на полный экран",
+    "description": "Красная Шапочка и т.п.",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-11-07T10:06:23.421641Z",
+    "updated_at": "2025-11-07T10:08:24.617578Z"
+   },
+   {
+    "id": 36,
+    "name": "Фарма Event TG  Copy",
+    "description": "Сценарии для ТГ-ботов для мероприятия",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-09-26T13:49:05.746517Z",
+    "updated_at": "2025-09-26T15:23:13.439177Z"
+   },
+   {
+    "id": 35,
+    "name": "Подъемные краны",
+    "description": "Немедицинские сценарии_Краны",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-05-07T18:53:43.948135Z",
+    "updated_at": "2025-09-24T10:20:10.36346Z"
+   },
+   {
+    "id": 33,
+    "name": "КВИЗ",
+    "description": "ОЗОН квиз 1 аптека",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-02-25T09:08:53.12865Z",
+    "updated_at": "2026-04-10T13:38:45.024128Z"
+   },
+   {
+    "id": 32,
+    "name": "Сказки",
+    "description": "немедицина",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-12-08T17:29:50.012875Z",
+    "updated_at": "2025-06-30T18:11:45.180217Z"
+   },
+   {
+    "id": 31,
+    "name": "Новая тематика 2",
+    "description": "немедицина",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-12-06T18:00:11.709723Z",
+    "updated_at": "2025-06-12T16:13:25.983317Z"
+   },
+   {
+    "id": 30,
+    "name": "Ветеринарка 1",
+    "description": "Ветеринарные кейсы",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-10-22T14:13:46.058461Z",
+    "updated_at": "2024-12-06T18:05:49.680836Z"
+   },
+   {
+    "id": 29,
+    "name": "ОЗОН-Аптека",
+    "description": "ОЗОН квизы Фон - аптека",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-10-16T10:45:42.526653Z",
+    "updated_at": "2025-02-25T09:08:10.519668Z"
+   },
+   {
+    "id": 28,
+    "name": "Бытовые сценарии 2",
+    "description": "Спикер в парке",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-03-07T10:28:45.651836Z",
+    "updated_at": "2024-03-07T14:24:52.179435Z"
+   },
+   {
+    "id": 27,
+    "name": "Бытовые сценарии 1",
+    "description": "Градусник и т.п.",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-03-06T07:06:38.940639Z",
+    "updated_at": "2024-03-06T07:45:34.298071Z"
+   },
+   {
+    "id": 23,
+    "name": "111",
+    "description": "111",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-02-14T02:34:50.025876Z",
+    "updated_at": "2024-02-14T02:34:50.025876Z"
+   },
+   {
+    "id": 22,
+    "name": "ny",
+    "description": "Новогодний",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-12-31T07:48:28.27651Z",
+    "updated_at": "2024-03-04T10:59:23.470975Z"
+   },
+   {
+    "id": 21,
+    "name": "Фарма Event TG ",
+    "description": "Сценарии для ТГ-ботов для мероприятия",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-12-19T17:58:16.795728Z",
+    "updated_at": "2025-09-02T07:28:02.042889Z"
+   },
+   {
+    "id": 16,
+    "name": "Скорая Помощь",
+    "description": "Для оформления сценариев СМП и Emergency",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-12-11T10:13:48.371082Z",
+    "updated_at": "2023-12-15T07:57:37.095096Z"
+   },
+   {
+    "id": 10,
+    "name": "Тестовый стиль",
+    "description": "Описание для тестового стиля",
+    "body": null,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-12-04T08:31:24.409112Z",
+    "updated_at": "2025-02-05T07:37:14.642848Z"
+   },
+   {
+    "id": 1,
+    "name": "empty style",
+    "description": "пустой стиль по умолчанию",
+    "body": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-11-28T09:00:53.58567Z",
+    "updated_at": "2023-11-28T09:00:53.58567Z"
+   }
+  ],
+  "test-types": [
+   {
+    "id": 1,
+    "name": "Базовый",
+    "description": "Базовый",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "admin",
+    "created_at": "2023-01-05T15:13:18.662914Z",
+    "updated_at": "2024-08-29T07:43:05.052709Z"
+   },
+   {
+    "id": 2,
+    "name": "2",
+    "description": "2",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "admin",
+    "created_at": "2023-01-05T15:13:18.662914Z",
+    "updated_at": "2023-10-18T16:40:53.536617Z"
+   },
+   {
+    "id": 3,
+    "name": "3",
+    "description": "3",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "admin",
+    "created_at": "2023-01-05T15:13:18.662914Z",
+    "updated_at": "2023-10-20T16:14:49.863495Z"
+   },
+   {
+    "id": 5,
+    "name": "Takeda branches",
+    "description": "Такеда ветвистый сценарий",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "admin",
+    "created_at": "2023-01-05T15:13:18.662914Z",
+    "updated_at": "2023-10-23T10:12:39.303953Z"
+   },
+   {
+    "id": 6,
+    "name": "Takeda nao",
+    "description": "Такеда нао",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "admin",
+    "created_at": "2023-01-05T15:13:18.662914Z",
+    "updated_at": "2023-09-27T09:32:20.191855Z"
+   },
+   {
+    "id": 7,
+    "name": "7",
+    "description": "7",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "admin",
+    "created_at": "2023-01-05T15:13:18.662914Z",
+    "updated_at": "2023-10-20T14:54:59.067665Z"
+   },
+   {
+    "id": 9,
+    "name": "new name 111",
+    "description": "new description",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-03-28T18:21:49.517402Z",
+    "updated_at": "2023-10-20T14:44:56.463757Z"
+   },
+   {
+    "id": 40,
+    "name": "Внешний",
+    "description": "Внешний",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-08-14T06:16:03.238996Z",
+    "updated_at": "2024-08-15T22:01:34.889669Z"
+   },
+   {
+    "id": 42,
+    "name": "1",
+    "description": "",
+    "is_active": false,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-11-07T11:22:44.983977Z",
+    "updated_at": "2024-11-07T11:22:44.983977Z"
+   }
+  ],
+  "question-types": [
+   {
+    "id": 0,
+    "name": "type name",
+    "description": "параметры и данные для сценария или настройки",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-09-29T10:05:37.835545Z",
+    "updated_at": "2023-09-29T10:05:37.835545Z"
+   },
+   {
+    "id": 1,
+    "name": "info",
+    "description": "Информация",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-01-31T16:50:51.657722Z",
+    "updated_at": "2023-01-31T16:50:51.657722Z"
+   },
+   {
+    "id": 2,
+    "name": "question",
+    "description": "Вопрос",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-01-31T16:50:51.657722Z",
+    "updated_at": "2023-01-31T16:50:51.657722Z"
+   },
+   {
+    "id": 3,
+    "name": "feedback",
+    "description": "Отзыв",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2023-01-31T16:50:51.657722Z",
+    "updated_at": "2023-01-31T16:50:51.657722Z"
+   },
+   {
+    "id": 4,
+    "name": "parameters",
+    "description": "параметры и данные для сценария или настройки",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2023-06-05T08:43:54.083785Z",
+    "updated_at": "2023-06-05T08:43:54.083785Z"
+   },
+   {
+    "id": 5,
+    "name": "chat",
+    "description": "Чат",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-08-29T05:25:14.819405Z",
+    "updated_at": "2024-08-29T05:25:14.819405Z"
+   },
+   {
+    "id": 6,
+    "name": "absolute",
+    "description": "абсолютные координаты",
+    "is_active": true,
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2025-10-27T00:00:54.696001Z",
+    "updated_at": "2025-10-27T00:00:54.696001Z"
+   }
+  ],
+  "specializations": [
+   {
+    "id": 16,
+    "name": "Нейрохирургия",
+    "description": "Нейрохирургические клинические сценарии",
+    "is_active": true,
+    "title": "Нейрохирургия",
+    "subtitle": "Клинические случаи из практики",
+    "text_body": "",
+    "image_url": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2026-05-31T22:51:46.125538Z",
+    "updated_at": "2026-05-31T22:51:46.125538Z"
+   },
+   {
+    "id": 13,
+    "name": "fhf",
+    "description": "hfdh",
+    "is_active": true,
+    "title": "",
+    "subtitle": "",
+    "text_body": "",
+    "image_url": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-03-13T05:38:32.931383Z",
+    "updated_at": "2024-03-13T05:38:32.931383Z"
+   },
+   {
+    "id": 7,
+    "name": "345",
+    "description": "35534",
+    "is_active": true,
+    "title": "",
+    "subtitle": "",
+    "text_body": "",
+    "image_url": "",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-03-06T20:08:52.808844Z",
+    "updated_at": "2024-03-06T20:08:52.808844Z"
+   },
+   {
+    "id": 2,
+    "name": "Стоматология",
+    "description": "Стоматология description",
+    "is_active": true,
+    "title": "Стоматология",
+    "subtitle": "Стоматология subtitle",
+    "text_body": "Стоматология text_body",
+    "image_url": "Стоматология image_url",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-02-22T10:10:57.386978Z",
+    "updated_at": "2024-02-22T10:10:57.386978Z"
+   },
+   {
+    "id": 1,
+    "name": "specialisation-1 name",
+    "description": "specialisation-1 description",
+    "is_active": true,
+    "title": "specialisation-1 title",
+    "subtitle": "specialisation-1 subtitle",
+    "text_body": "specialisation-1 text_body",
+    "image_url": "specialisation-1 image_url",
+    "created_by": "admin",
+    "updated_by": "admin",
+    "created_at": "2024-02-12T07:34:00.570903Z",
+    "updated_at": "2024-02-12T07:34:00.570903Z"
+   }
+  ],
+  "cities": [
+   {
+    "id": 1,
+    "name": "Москва",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-23T09:47:24.362605Z",
+    "updated_at": "2025-02-23T09:47:24.362605Z"
+   },
+   {
+    "id": 2,
+    "name": "Нижний Новгород",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-23T09:47:24.362605Z",
+    "updated_at": "2025-02-23T09:47:24.362605Z"
+   },
+   {
+    "id": 3,
+    "name": "Тюмень",
+    "is_active": true,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2025-02-23T09:47:24.362605Z",
+    "updated_at": "2025-02-23T09:47:24.362605Z"
+   }
+  ],
+  "hosts": [
+   {
+    "id": 1,
+    "description": "empty descr",
+    "is_active": true,
+    "url": "https://www.youtube.com",
+    "available_public_tests": true,
+    "created_at": "2023-01-24T17:13:20.758156Z",
+    "updated_at": "2023-02-06T21:55:48.855832Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 2,
+    "description": "Для локального запуска",
+    "is_active": true,
+    "url": "http://localhost:5173",
+    "available_public_tests": true,
+    "created_at": "2023-09-14T07:56:29.33056Z",
+    "updated_at": "2023-09-24T18:43:34.004025Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 3,
+    "description": "Для Постмана",
+    "is_active": true,
+    "url": "",
+    "available_public_tests": true,
+    "created_at": "2023-09-24T18:44:10.553678Z",
+    "updated_at": "2023-09-24T18:45:09.858832Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 4,
+    "description": "Для билдов на гитхабе",
+    "is_active": true,
+    "url": "https://1305a.github.io",
+    "available_public_tests": true,
+    "created_at": "2023-10-02T07:55:31.914032Z",
+    "updated_at": "2023-10-02T07:55:43.690976Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 5,
+    "description": "Для локального запуска 2",
+    "is_active": true,
+    "url": "http://localhost:5174",
+    "available_public_tests": true,
+    "created_at": "2023-10-02T08:02:41.753246Z",
+    "updated_at": "2023-12-08T04:54:47.604243Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 8,
+    "description": "Для локального запуска 3",
+    "is_active": true,
+    "url": "http://localhost:5175",
+    "available_public_tests": true,
+    "created_at": "2024-01-18T13:56:21.32992Z",
+    "updated_at": "2024-01-18T13:56:44.686354Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 9,
+    "description": "med-game",
+    "is_active": true,
+    "url": "https://med-game.ru",
+    "available_public_tests": true,
+    "created_at": "2024-01-19T16:04:13.480587Z",
+    "updated_at": "2024-01-19T16:05:41.533587Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 10,
+    "description": "Для отладки билдов",
+    "is_active": true,
+    "url": "https://averjahn.github.io",
+    "available_public_tests": true,
+    "created_at": "2024-01-31T13:10:12.961591Z",
+    "updated_at": "2024-01-31T13:10:22.716386Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 11,
+    "description": "Для mpromed на гитхабе",
+    "is_active": true,
+    "url": "https://mpromed.github.io",
+    "available_public_tests": true,
+    "created_at": "2024-10-09T13:04:41.647652Z",
+    "updated_at": "2024-10-09T13:04:41.647652Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 12,
+    "description": "Тестовый для проверки222",
+    "is_active": true,
+    "url": "https://fopdev.tw1.ru",
+    "available_public_tests": true,
+    "created_at": "2025-02-11T15:12:26.699369Z",
+    "updated_at": "2025-02-19T08:55:12.585777Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 13,
+    "description": "Прод Заказчика ОЗОН тонометры",
+    "is_active": true,
+    "url": "https://pharmskills.ru",
+    "available_public_tests": true,
+    "created_at": "2025-02-11T15:13:28.788784Z",
+    "updated_at": "2025-02-19T08:57:55.593836Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 14,
+    "description": "Прод Заказчика ОЗОН тонометры",
+    "is_active": true,
+    "url": "https://www.pharmskills.ru",
+    "available_public_tests": true,
+    "created_at": "2025-02-19T08:06:30.677411Z",
+    "updated_at": "2025-03-06T09:57:22.988801Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 15,
+    "description": "Прод Заказчика ОЗОН тонометры 3",
+    "is_active": true,
+    "url": "https://pharmskills.ru/",
+    "available_public_tests": true,
+    "created_at": "2025-02-19T08:13:39.847976Z",
+    "updated_at": "2025-02-19T08:13:39.847976Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 16,
+    "description": "",
+    "is_active": true,
+    "url": "https://edu.med-game.ru",
+    "available_public_tests": true,
+    "created_at": "2025-07-22T15:12:35.465229Z",
+    "updated_at": "2025-07-22T15:14:33.016658Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 17,
+    "description": "",
+    "is_active": true,
+    "url": "https://pharmgame1.med-game.ru",
+    "available_public_tests": true,
+    "created_at": "2025-07-29T08:31:12.00526Z",
+    "updated_at": "2025-07-29T08:31:12.00526Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 18,
+    "description": "Для тестирования всех баз",
+    "is_active": true,
+    "url": "https://edudev.med-game.ru",
+    "available_public_tests": true,
+    "created_at": "2025-09-03T10:49:22.18509Z",
+    "updated_at": "2025-09-03T10:49:22.18509Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 19,
+    "description": "Для тестирования всех баз2",
+    "is_active": true,
+    "url": "http://edudev.med-game.ru",
+    "available_public_tests": true,
+    "created_at": "2025-09-03T10:50:51.020672Z",
+    "updated_at": "2025-09-03T10:50:51.020672Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   }
+  ],
+  "roles": [
+   {
+    "id": 1,
+    "name": "guest",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь без логина-пароля (только кука и сессия)",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 2,
+    "name": "user-part",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем. Доступ к эндпоинтам юзеров",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 3,
+    "name": "public-tests",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем. Доступ к публичным сценариям",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 4,
+    "name": "some-tests",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем. Доступ к некоторым непубличным сценариям",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 5,
+    "name": "content",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, имеющий доступ для создания и редактирования сценариев",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 6,
+    "name": "admin-part",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, доступ к админским эндпоинтам",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 7,
+    "name": "manage-users",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, редактировать юзеров",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 8,
+    "name": "manage-roles",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь c логином-паролем, редактировать роли",
+    "created_at": "2023-01-24T16:59:19.049567Z",
+    "updated_at": "2023-01-24T16:59:19.049567Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 10,
+    "name": "voting-admin",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "пользователь с логином-паролем, создавать голосовалки ",
+    "created_at": "2023-11-06T10:11:03.272441Z",
+    "updated_at": "2023-11-06T10:12:38.982319Z",
+    "created_by": "admin",
+    "updated_by": "admin"
+   },
+   {
+    "id": 11,
+    "name": "group-reporter",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "смотреть отчеты по группе",
+    "created_at": "2024-10-06T17:51:32.676303Z",
+    "updated_at": "2024-10-06T17:51:32.676303Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   },
+   {
+    "id": 12,
+    "name": "division-reporter",
+    "is_active": true,
+    "parents": null,
+    "permissions": null,
+    "description": "смотреть отчеты по отделу",
+    "created_at": "2024-10-06T17:51:44.005988Z",
+    "updated_at": "2024-10-06T17:51:44.005988Z",
+    "created_by": "seed",
+    "updated_by": "seed"
+   }
+  ],
+  "permissions": [
+   {
+    "id": 1,
+    "name": "permission-guest",
+    "description": "пользователь без логина-пароля (только кука и сессия)",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 2,
+    "name": "permission-user-part",
+    "description": "пользователь c логином-паролем. Доступ к эндпоинтам юзеров",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 3,
+    "name": "permission-public-tests",
+    "description": "пользователь c логином-паролем. Доступ к публичным сценариям",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 4,
+    "name": "permission-some-tests",
+    "description": "пользователь c логином-паролем. Доступ к некоторым непубличным сценариям",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 5,
+    "name": "permission-content",
+    "description": "пользователь c логином-паролем, имеющий доступ для создания и редактирования сценариев",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 6,
+    "name": "permission-admin-part",
+    "description": "пользователь c логином-паролем, доступ к админским эндпоинтам",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 7,
+    "name": "permission-manage-users",
+    "description": "пользователь c логином-паролем, редактировать юзеров",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 8,
+    "name": "permission-manage-roles",
+    "description": "пользователь c логином-паролем, редактировать роли",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 9,
+    "name": "permission-report-viewer",
+    "description": "репортер - отчеты",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 10,
+    "name": "permission-voting-admin",
+    "description": "админ голосовалки",
+    "is_active": true,
+    "required_entity": null,
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-03-28T11:35:52.964255Z",
+    "updated_at": "2024-03-28T11:35:52.964255Z"
+   },
+   {
+    "id": 11,
+    "name": "view-group-report",
+    "description": "просматривать отчеты по группе",
+    "is_active": true,
+    "required_entity": "group",
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-10-06T17:51:32.676303Z",
+    "updated_at": "2024-10-06T17:51:32.676303Z"
+   },
+   {
+    "id": 12,
+    "name": "view-division-report",
+    "description": "просматривать отчеты по отделу",
+    "is_active": true,
+    "required_entity": "division",
+    "created_by": "seed",
+    "updated_by": "seed",
+    "created_at": "2024-10-06T17:51:44.005988Z",
+    "updated_at": "2024-10-06T17:51:44.005988Z"
+   }
+  ]
+ }
+}

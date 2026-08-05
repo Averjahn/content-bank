@@ -1,0 +1,2542 @@
+{
+ "tech2": [
+  {
+   "id": 36,
+   "name": "Адаптивное обучение",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 86,
+     "company_id": 36,
+     "name": "test",
+     "description": "",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-04T11:55:30.587073Z",
+     "updated_at": "2026-06-04T11:55:30.587073Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 59,
+     "name": "Test",
+     "description": "",
+     "is_active": true,
+     "company_id": 36,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-04T11:54:20.277904Z",
+     "updated_at": "2026-06-04T11:54:20.277904Z"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "name": "Московский областной центр по профилактике и борьбе со СПИДом и инфекционными заболеваниями",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 81,
+     "company_id": 34,
+     "name": "Руководство HIVMO",
+     "description": "Руководство Московский областной центр по профилактике и борьбе со СПИДом",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-17T13:31:51.865115Z",
+     "updated_at": "2026-03-24T16:22:32.755635Z"
+    },
+    {
+     "id": 82,
+     "company_id": 34,
+     "name": "АПО №1",
+     "description": "АПО №1 Московский областной центр по профилактике и борьбе со СПИДом",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-17T13:32:45.365638Z",
+     "updated_at": "2026-03-17T13:32:45.365638Z"
+    },
+    {
+     "id": 83,
+     "company_id": 34,
+     "name": "АПО №2",
+     "description": "АПО №2 Московский областной центр по профилактике и борьбе со СПИДом",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-17T13:33:18.620799Z",
+     "updated_at": "2026-03-17T13:33:18.620799Z"
+    },
+    {
+     "id": 84,
+     "company_id": 34,
+     "name": "Педиатрическое отделение",
+     "description": "Педиатрическое отделение Московский областной центр по профилактике и борьбе со СПИДом",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-17T13:34:05.170993Z",
+     "updated_at": "2026-03-17T13:34:05.170993Z"
+    },
+    {
+     "id": 85,
+     "company_id": 34,
+     "name": "Отделение эпидемиологии и профилактики",
+     "description": "Отделение эпидемиологии и профилактики",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-26T07:20:15.060711Z",
+     "updated_at": "2026-03-26T07:20:15.060711Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 58,
+     "name": "группа Московский областной центр по профилактике и борьбе со СПИДом",
+     "description": "группа Московский областной центр по профилактике и борьбе со СПИДом ",
+     "is_active": true,
+     "company_id": 34,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-17T13:26:38.499722Z",
+     "updated_at": "2026-03-17T13:26:38.499722Z"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "name": "Мензелинское медицинское училище",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 64,
+     "company_id": 33,
+     "name": "ММУ Группа 101",
+     "description": "ММУ Группа 101",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-28T14:59:45.294661Z",
+     "updated_at": "2026-01-28T14:59:45.294661Z"
+    },
+    {
+     "id": 65,
+     "company_id": 33,
+     "name": "ММУ Группа 103А",
+     "description": "ММУ Группа 103А",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:28:14.910728Z",
+     "updated_at": "2026-01-30T13:28:14.910728Z"
+    },
+    {
+     "id": 66,
+     "company_id": 33,
+     "name": "ММУ Группа 103Б",
+     "description": "ММУ Группа 103Б",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:28:41.490571Z",
+     "updated_at": "2026-01-30T13:28:41.490571Z"
+    },
+    {
+     "id": 67,
+     "company_id": 33,
+     "name": "ММУ Группа 102",
+     "description": "ММУ Группа 102",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:29:11.121523Z",
+     "updated_at": "2026-01-30T13:29:11.121523Z"
+    },
+    {
+     "id": 68,
+     "company_id": 33,
+     "name": "ММУ Группа 201",
+     "description": "ММУ Группа 201",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:29:29.305387Z",
+     "updated_at": "2026-01-30T13:29:29.305387Z"
+    },
+    {
+     "id": 69,
+     "company_id": 33,
+     "name": "ММУ Группа 203А",
+     "description": "ММУ Группа 203А",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:29:47.321734Z",
+     "updated_at": "2026-01-30T13:29:47.321734Z"
+    },
+    {
+     "id": 70,
+     "company_id": 33,
+     "name": "ММУ Группа 203Б",
+     "description": "ММУ Группа 203Б",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:30:00.508769Z",
+     "updated_at": "2026-01-30T13:30:00.508769Z"
+    },
+    {
+     "id": 71,
+     "company_id": 33,
+     "name": "ММУ Группа 202",
+     "description": "ММУ Группа 202",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:30:33.663039Z",
+     "updated_at": "2026-01-30T13:30:33.663039Z"
+    },
+    {
+     "id": 72,
+     "company_id": 33,
+     "name": "ММУ Группа 301",
+     "description": "ММУ Группа 301",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:30:50.274211Z",
+     "updated_at": "2026-01-30T13:30:50.274211Z"
+    },
+    {
+     "id": 73,
+     "company_id": 33,
+     "name": "ММУ Группа 301А",
+     "description": "ММУ Группа 301А",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:31:06.158311Z",
+     "updated_at": "2026-01-30T13:31:06.158311Z"
+    },
+    {
+     "id": 74,
+     "company_id": 33,
+     "name": "ММУ Группа 301Б",
+     "description": "ММУ Группа 301Б",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:31:19.884276Z",
+     "updated_at": "2026-01-30T13:31:19.884276Z"
+    },
+    {
+     "id": 75,
+     "company_id": 33,
+     "name": "ММУ Группа 401",
+     "description": "ММУ Группа 401",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:31:37.675167Z",
+     "updated_at": "2026-01-30T13:31:37.675167Z"
+    },
+    {
+     "id": 76,
+     "company_id": 33,
+     "name": "ММУ Группа 401А",
+     "description": "ММУ Группа 401А",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:31:43.576347Z",
+     "updated_at": "2026-01-30T13:31:43.576347Z"
+    },
+    {
+     "id": 77,
+     "company_id": 33,
+     "name": "ММУ Группа 401Б",
+     "description": "ММУ Группа 401Б",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-30T13:31:56.01704Z",
+     "updated_at": "2026-01-30T13:31:56.01704Z"
+    },
+    {
+     "id": 78,
+     "company_id": 33,
+     "name": "reporters",
+     "description": "",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-02-02T10:22:34.235751Z",
+     "updated_at": "2026-02-02T10:22:34.235751Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 55,
+     "name": "ММУ Студенты",
+     "description": "Студенты",
+     "is_active": true,
+     "company_id": 33,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-28T14:57:41.778814Z",
+     "updated_at": "2026-01-28T14:57:41.778814Z"
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "name": "Общий доступ",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 61,
+     "company_id": 26,
+     "name": "",
+     "description": "",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-08-11T13:15:11.615604Z",
+     "updated_at": "2025-08-11T13:15:11.615604Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 47,
+     "name": "Общий доступ",
+     "description": "",
+     "is_active": true,
+     "company_id": 26,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-08-11T13:00:34.479198Z",
+     "updated_at": "2025-08-11T13:00:34.479198Z"
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "name": "Самарский медицинский колледж имени Н.Ляпиной",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 56,
+     "company_id": 25,
+     "name": "Группа 001",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 001",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-07-23T14:24:17.547694Z",
+     "updated_at": "2025-07-23T14:24:17.547694Z"
+    },
+    {
+     "id": 57,
+     "company_id": 25,
+     "name": "Группа 002",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 002",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-07-23T14:24:45.630568Z",
+     "updated_at": "2025-07-23T14:24:45.630568Z"
+    },
+    {
+     "id": 58,
+     "company_id": 25,
+     "name": "Группа 003",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 003",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-07-23T14:25:29.854762Z",
+     "updated_at": "2025-07-23T14:25:29.854762Z"
+    },
+    {
+     "id": 59,
+     "company_id": 25,
+     "name": "Группа 004",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 004",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-07-23T14:25:35.438102Z",
+     "updated_at": "2025-07-23T14:25:35.438102Z"
+    },
+    {
+     "id": 60,
+     "company_id": 25,
+     "name": "Преподаватели",
+     "description": "",
+     "is_active": true,
+     "title": "Преподаватели",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-07-23T14:26:04.497528Z",
+     "updated_at": "2025-07-23T14:26:04.497528Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 46,
+     "name": "Группа Самарского медицинского колледжа",
+     "description": "",
+     "is_active": true,
+     "company_id": 25,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-07-23T14:22:16.491034Z",
+     "updated_at": "2025-07-23T14:22:16.491034Z"
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "name": "Областной центр по профилактике и борьбе со СПИД",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 40,
+     "company_id": 19,
+     "name": "Тестовое подразделение спид центра",
+     "description": "",
+     "is_active": true,
+     "title": "Тестовое подразделение",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-12-02T11:03:10.982317Z",
+     "updated_at": "2024-12-02T11:03:10.982317Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 43,
+     "name": "Тестовая группа спид центра",
+     "description": "Тестовая группа спид центр",
+     "is_active": true,
+     "company_id": 19,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-12-02T11:01:53.531214Z",
+     "updated_at": "2025-02-26T09:07:36.171305Z"
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "name": "Кущёвский Медицинский Колледж",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 37,
+     "company_id": 17,
+     "name": "Тестирование платформы",
+     "description": "",
+     "is_active": true,
+     "title": "Тестирование платформы",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-28T11:52:20.868948Z",
+     "updated_at": "2024-11-28T11:52:20.868948Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 40,
+     "name": "Тестовая группа 1",
+     "description": "",
+     "is_active": true,
+     "company_id": 17,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-28T11:52:59.246169Z",
+     "updated_at": "2024-11-28T11:52:59.246169Z"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "name": "ЦИТО им Н.Н. Приорова",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 36,
+     "company_id": 16,
+     "name": "Основное подразделение ЦИТО им Н.Н. Приорова",
+     "description": "",
+     "is_active": true,
+     "title": "Основное подразделение",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-25T11:05:31.982273Z",
+     "updated_at": "2025-02-28T11:57:23.140283Z"
+    },
+    {
+     "id": 54,
+     "company_id": 16,
+     "name": "Тестовая группа",
+     "description": "",
+     "is_active": true,
+     "title": "Тестовая группа",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-03-12T12:11:05.575856Z",
+     "updated_at": "2025-03-12T12:11:05.575856Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 38,
+     "name": "Группа ЦИТО им Н.Н. Приорова",
+     "description": "",
+     "is_active": true,
+     "company_id": 16,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-25T11:03:51.983829Z",
+     "updated_at": "2025-02-28T11:42:48.592574Z"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "name": "Самарский Медицинский Колледж",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 33,
+     "company_id": 15,
+     "name": "Самара Группа 1",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-12T08:04:10.746105Z",
+     "updated_at": "2024-11-12T08:04:10.746105Z"
+    },
+    {
+     "id": 34,
+     "company_id": 15,
+     "name": "Самара Группа 2",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-12T08:04:18.631659Z",
+     "updated_at": "2024-11-12T08:04:18.631659Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 37,
+     "name": "Самарский Медицинский Колледж",
+     "description": "",
+     "is_active": true,
+     "company_id": 15,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-12T08:02:03.139161Z",
+     "updated_at": "2024-11-12T08:02:03.139161Z"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "name": "Горячеключевской Медицинский Колледж",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 31,
+     "company_id": 14,
+     "name": "Горячеключевск Группа 1",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-12T08:02:43.004147Z",
+     "updated_at": "2024-11-12T08:02:43.004147Z"
+    },
+    {
+     "id": 32,
+     "company_id": 14,
+     "name": "Горячеключевск Группа 2",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-12T08:03:24.384731Z",
+     "updated_at": "2024-11-12T08:03:24.384731Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 36,
+     "name": "Горячеключевской Медицинский Колледж",
+     "description": "",
+     "is_active": true,
+     "company_id": 14,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-12T08:01:12.925935Z",
+     "updated_at": "2024-11-12T08:01:12.925935Z"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "name": "Воркутинский медицинский колледж",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 29,
+     "company_id": 13,
+     "name": "Воркута Группа 1",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-08T16:44:40.568187Z",
+     "updated_at": "2024-11-08T16:44:40.568187Z"
+    },
+    {
+     "id": 30,
+     "company_id": 13,
+     "name": "Воркута Группа 2",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-08T16:44:57.342929Z",
+     "updated_at": "2024-11-08T16:44:57.342929Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 35,
+     "name": "Воркута",
+     "description": "",
+     "is_active": true,
+     "company_id": 13,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-08T16:34:58.729843Z",
+     "updated_at": "2024-11-08T16:34:58.729843Z"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Евпаторийский медколледж",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 27,
+     "company_id": 12,
+     "name": "Евпатория Группа 1",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-08T16:43:59.196234Z",
+     "updated_at": "2024-11-08T16:43:59.196234Z"
+    },
+    {
+     "id": 28,
+     "company_id": 12,
+     "name": "Евпатория Группа 2",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-08T16:44:20.329082Z",
+     "updated_at": "2024-11-08T16:44:20.329082Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 34,
+     "name": "Евпатория",
+     "description": "",
+     "is_active": true,
+     "company_id": 12,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-08T16:34:24.774472Z",
+     "updated_at": "2024-11-08T16:34:24.774472Z"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "Тестовый медицинский колледж",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 24,
+     "company_id": 11,
+     "name": "Группа 2",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-06T11:00:39.538727Z",
+     "updated_at": "2024-11-06T11:00:39.538727Z"
+    },
+    {
+     "id": 25,
+     "company_id": 11,
+     "name": "Группа 1",
+     "description": "",
+     "is_active": true,
+     "title": "Группа 1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-06T11:42:13.163448Z",
+     "updated_at": "2024-11-06T11:42:13.163448Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 61,
+     "name": "Основные курсы дивизион",
+     "description": "",
+     "is_active": true,
+     "company_id": 11,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-07-27T13:57:04.769962Z",
+     "updated_at": "2026-07-27T13:57:04.769962Z"
+    },
+    {
+     "id": 60,
+     "name": "Кардиология дивизион",
+     "description": "",
+     "is_active": true,
+     "company_id": 11,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-07-27T13:52:57.451091Z",
+     "updated_at": "2026-07-27T13:52:57.451091Z"
+    },
+    {
+     "id": 33,
+     "name": "Тестовая группа медицинского колледжа",
+     "description": "",
+     "is_active": true,
+     "company_id": 11,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-06T11:02:05.58956Z",
+     "updated_at": "2024-11-08T08:24:52.363822Z"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "Нижегородский областной центр СПИД",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 22,
+     "company_id": 10,
+     "name": "Тестовое подразделение",
+     "description": "",
+     "is_active": true,
+     "title": "Тестовое",
+     "subtitle": "Тестовое",
+     "text_body": "Тестовое",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-10-29T07:40:21.628019Z",
+     "updated_at": "2024-10-29T07:40:21.628019Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 32,
+     "name": "Тестовая группа СПИД центра",
+     "description": "Тестовая группа СПИД центр",
+     "is_active": true,
+     "company_id": 10,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-10-28T14:24:55.538764Z",
+     "updated_at": "2025-02-26T09:12:21.245834Z"
+    },
+    {
+     "id": 30,
+     "name": "Тестовая",
+     "description": "",
+     "is_active": true,
+     "company_id": 10,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-09-12T12:59:13.801235Z",
+     "updated_at": "2024-09-12T12:59:13.801235Z"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "Тюменский кардиологический научный центр",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 42,
+     "company_id": 9,
+     "name": "Кардиологическое отделение №1",
+     "description": "",
+     "is_active": true,
+     "title": "Кардиологическое отделение №1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T09:58:31.894907Z",
+     "updated_at": "2025-02-28T09:58:31.894907Z"
+    },
+    {
+     "id": 43,
+     "company_id": 9,
+     "name": "Кардиологическое отделение №2",
+     "description": "",
+     "is_active": true,
+     "title": "Кардиологическое отделение №2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T09:58:38.712527Z",
+     "updated_at": "2025-02-28T09:58:38.712527Z"
+    },
+    {
+     "id": 44,
+     "company_id": 9,
+     "name": "Кардиологическое отделение №3",
+     "description": "",
+     "is_active": true,
+     "title": "Кардиологическое отделение №3",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T09:58:58.068472Z",
+     "updated_at": "2025-02-28T09:58:58.068472Z"
+    },
+    {
+     "id": 45,
+     "company_id": 9,
+     "name": "Консультативное отделение",
+     "description": "",
+     "is_active": true,
+     "title": "Консультативное отделение",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T09:59:19.837553Z",
+     "updated_at": "2025-02-28T09:59:19.837553Z"
+    },
+    {
+     "id": 46,
+     "company_id": 9,
+     "name": "Многопрофильное консультативное отделение",
+     "description": "",
+     "is_active": true,
+     "title": "Многопрофильное консультативное отделение",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T09:59:32.764603Z",
+     "updated_at": "2025-02-28T09:59:32.764603Z"
+    },
+    {
+     "id": 47,
+     "company_id": 9,
+     "name": "Отделение медицинской реабилитации",
+     "description": "",
+     "is_active": true,
+     "title": "Отделение медицинской реабилитации",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T09:59:47.428186Z",
+     "updated_at": "2025-02-28T09:59:47.428186Z"
+    },
+    {
+     "id": 49,
+     "company_id": 9,
+     "name": "Отделение хирургического лечения сложных нарушений ритма сердца и электрокардиостимуляции №1",
+     "description": "",
+     "is_active": true,
+     "title": "Отделение хирургического лечения сложных нарушений ритма сердца и электрокардиостимуляции №1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T10:01:47.688584Z",
+     "updated_at": "2025-02-28T10:01:47.688584Z"
+    },
+    {
+     "id": 50,
+     "company_id": 9,
+     "name": "Отделение хирургического лечения сложных нарушений ритма сердца и электрокардиостимуляции №2",
+     "description": "",
+     "is_active": true,
+     "title": "Отделение хирургического лечения сложных нарушений ритма сердца и электрокардиостимуляции №2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T10:01:58.684883Z",
+     "updated_at": "2025-02-28T10:01:58.684883Z"
+    },
+    {
+     "id": 52,
+     "company_id": 9,
+     "name": "Приемное отделение",
+     "description": "",
+     "is_active": true,
+     "title": "Приемное отделение",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T10:02:31.425114Z",
+     "updated_at": "2025-02-28T10:02:31.425114Z"
+    },
+    {
+     "id": 53,
+     "company_id": 9,
+     "name": "Руководство",
+     "description": "",
+     "is_active": true,
+     "title": "Руководство",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-02-28T10:02:43.863318Z",
+     "updated_at": "2025-02-28T10:02:43.863318Z"
+    },
+    {
+     "id": 55,
+     "company_id": 9,
+     "name": "Ординаторы",
+     "description": "",
+     "is_active": true,
+     "title": "Ординаторы",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-04-22T11:46:57.59678Z",
+     "updated_at": "2025-04-22T11:46:57.59678Z"
+    },
+    {
+     "id": 79,
+     "company_id": 9,
+     "name": "Дивизион Кардиология2",
+     "description": "Дивизион тестовый Кардиология2",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-10T13:47:15.988033Z",
+     "updated_at": "2026-03-10T13:47:15.988033Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 56,
+     "name": "Кардиология 2",
+     "description": "Кардиология 538 по 590",
+     "is_active": true,
+     "company_id": 9,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-03-10T13:43:13.445976Z",
+     "updated_at": "2026-03-10T13:43:13.445976Z"
+    },
+    {
+     "id": 45,
+     "name": "Основная группа1",
+     "description": "",
+     "is_active": true,
+     "company_id": 9,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-03-03T10:24:17.186126Z",
+     "updated_at": "2025-03-03T10:24:17.186126Z"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "СМП Нижегородская обл.",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 16,
+     "company_id": 8,
+     "name": "СМП НО",
+     "description": "",
+     "is_active": true,
+     "title": "СМП НО",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:31:56.805435Z",
+     "updated_at": "2024-07-18T15:31:56.805435Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 31,
+     "name": "Тестовая-2",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-09-30T14:10:47.171798Z",
+     "updated_at": "2024-09-30T14:10:47.171798Z"
+    },
+    {
+     "id": 28,
+     "name": "smp-nn_test",
+     "description": "Тестовая группа",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-08-13T10:00:58.064261Z",
+     "updated_at": "2024-08-13T10:00:58.064261Z"
+    },
+    {
+     "id": 27,
+     "name": "Отд. СМП Борской ЦРБ",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:38:55.127476Z",
+     "updated_at": "2024-07-18T15:38:55.127476Z"
+    },
+    {
+     "id": 26,
+     "name": "Отд.СМП Кстовской ЦРБ",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:38:44.876594Z",
+     "updated_at": "2024-07-18T15:38:44.876594Z"
+    },
+    {
+     "id": 25,
+     "name": "БСМП г. Арзамас",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:38:35.477465Z",
+     "updated_at": "2024-07-18T15:38:35.477465Z"
+    },
+    {
+     "id": 24,
+     "name": "БСМП г. Дзержинск",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:38:26.659252Z",
+     "updated_at": "2024-07-18T15:38:26.659252Z"
+    },
+    {
+     "id": 23,
+     "name": "ГБУЗ НО ССМПНН Подстанция 10",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:38:11.323984Z",
+     "updated_at": "2024-07-18T15:38:11.323984Z"
+    },
+    {
+     "id": 22,
+     "name": "ГБУЗ НО ССМПНН Подстанция 9",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:38:07.564839Z",
+     "updated_at": "2024-07-18T15:38:07.564839Z"
+    },
+    {
+     "id": 21,
+     "name": "ГБУЗ НО ССМПНН Подстанция 8",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:38:03.764246Z",
+     "updated_at": "2024-07-18T15:38:03.764246Z"
+    },
+    {
+     "id": 20,
+     "name": "ГБУЗ НО ССМПНН Подстанция 7",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:37:59.788476Z",
+     "updated_at": "2024-07-18T15:37:59.788476Z"
+    },
+    {
+     "id": 19,
+     "name": "ГБУЗ НО ССМПНН Подстанция 6",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:37:56.766676Z",
+     "updated_at": "2024-07-18T15:37:56.766676Z"
+    },
+    {
+     "id": 18,
+     "name": "ГБУЗ НО ССМПНН Подстанция 5",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:37:53.109077Z",
+     "updated_at": "2024-07-18T15:37:53.109077Z"
+    },
+    {
+     "id": 17,
+     "name": "ГБУЗ НО ССМПНН Подстанция 4",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:37:48.007006Z",
+     "updated_at": "2024-07-18T15:37:48.007006Z"
+    },
+    {
+     "id": 16,
+     "name": "ГБУЗ НО ССМПНН Подстанция 3",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:37:37.036092Z",
+     "updated_at": "2024-07-18T15:37:37.036092Z"
+    },
+    {
+     "id": 15,
+     "name": "ГБУЗ НО ССМПНН Подстанция 2",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:37:33.182412Z",
+     "updated_at": "2024-07-18T15:37:33.182412Z"
+    },
+    {
+     "id": 14,
+     "name": "ГБУЗ НО ССМПНН Подстанция 1",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T15:37:22.741561Z",
+     "updated_at": "2024-07-18T15:37:22.741561Z"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "ГБПОУ «Уральский медицинский колледж»",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 15,
+     "company_id": 7,
+     "name": "ГБПОУ «Уральский медицинский колледж»",
+     "description": "",
+     "is_active": true,
+     "title": "ГБПОУ «Уральский медицинский колледж»",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T14:02:03.765159Z",
+     "updated_at": "2024-07-18T14:02:03.765159Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 13,
+     "name": "Чусовой Курс 3",
+     "description": "",
+     "is_active": true,
+     "company_id": 7,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T14:04:47.706825Z",
+     "updated_at": "2024-07-18T14:04:47.706825Z"
+    },
+    {
+     "id": 12,
+     "name": "Чусовой Курс 2",
+     "description": "",
+     "is_active": true,
+     "company_id": 7,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T14:04:42.684684Z",
+     "updated_at": "2024-07-18T14:04:42.684684Z"
+    },
+    {
+     "id": 11,
+     "name": "Лысьва Курс 3",
+     "description": "",
+     "is_active": true,
+     "company_id": 7,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T14:04:31.97719Z",
+     "updated_at": "2024-07-18T14:04:31.97719Z"
+    },
+    {
+     "id": 10,
+     "name": "Лысьва Курс 2",
+     "description": "",
+     "is_active": true,
+     "company_id": 7,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T14:04:27.260225Z",
+     "updated_at": "2024-07-18T14:04:27.260225Z"
+    },
+    {
+     "id": 9,
+     "name": "Губаха Курс 3",
+     "description": "",
+     "is_active": true,
+     "company_id": 7,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T14:04:17.301236Z",
+     "updated_at": "2024-07-18T14:04:17.301236Z"
+    },
+    {
+     "id": 8,
+     "name": "Губаха Курс 2",
+     "description": "",
+     "is_active": true,
+     "company_id": 7,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-18T14:04:06.857044Z",
+     "updated_at": "2024-07-18T14:04:06.857044Z"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Министерство тестов",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 12,
+     "company_id": 6,
+     "name": "Тестовый департамент 1",
+     "description": "",
+     "is_active": true,
+     "title": "Тестовый департамент 1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-18T12:20:37.236931Z",
+     "updated_at": "2024-06-18T12:20:37.236931Z"
+    },
+    {
+     "id": 13,
+     "company_id": 6,
+     "name": "Тестовый департамент 2",
+     "description": "",
+     "is_active": true,
+     "title": "Тестовый департамент 2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-19T11:32:21.495413Z",
+     "updated_at": "2024-06-19T11:32:21.495413Z"
+    },
+    {
+     "id": 14,
+     "company_id": 6,
+     "name": "Тестовый департамент 3",
+     "description": "",
+     "is_active": true,
+     "title": "Тестовый департамент 3",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-19T11:35:07.595886Z",
+     "updated_at": "2024-06-19T11:35:07.595886Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 7,
+     "name": "Тестовая группа",
+     "description": "",
+     "is_active": true,
+     "company_id": 6,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-18T12:20:00.65443Z",
+     "updated_at": "2025-03-04T14:14:52.792071Z"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Иркутский областной центр СПИД",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 10,
+     "company_id": 5,
+     "name": "СПИД-центр",
+     "description": "",
+     "is_active": true,
+     "title": "СПИД-центр",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-18T11:25:49.715132Z",
+     "updated_at": "2024-06-18T11:25:49.715132Z"
+    },
+    {
+     "id": 11,
+     "company_id": 5,
+     "name": "Подразделения",
+     "description": "",
+     "is_active": true,
+     "title": "Подразделения",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-18T11:38:18.769766Z",
+     "updated_at": "2024-06-18T11:38:18.769766Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 6,
+     "name": "Основная группа 1",
+     "description": "",
+     "is_active": true,
+     "company_id": 5,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-18T11:27:26.059464Z",
+     "updated_at": "2024-06-18T11:27:26.059464Z"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Инфекционная клиническая больница Киров",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 9,
+     "company_id": 4,
+     "name": "Основное подразделение",
+     "description": "",
+     "is_active": true,
+     "title": "Основное подразделение",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-18T11:17:56.909306Z",
+     "updated_at": "2024-06-18T11:17:56.909306Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 4,
+     "name": "Основная группа",
+     "description": "",
+     "is_active": true,
+     "company_id": 4,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-06-18T11:19:39.349288Z",
+     "updated_at": "2024-06-18T11:19:39.349288Z"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Замбон",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 2,
+     "company_id": 3,
+     "name": "Медпреды",
+     "description": "Подразделение компании Замбон",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-19T13:10:26.634247Z",
+     "updated_at": "2024-04-19T13:10:26.634247Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 3,
+     "name": "Медпреды ",
+     "description": "Группа для компании Замбон ",
+     "is_active": true,
+     "company_id": 3,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-19T12:55:02.274985Z",
+     "updated_at": "2024-04-19T12:55:02.274985Z"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "СМП Тюмень",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 1,
+     "company_id": 2,
+     "name": "Tumen-test-division",
+     "description": "Tumen division description",
+     "is_active": true,
+     "title": "title",
+     "subtitle": "subtitle",
+     "text_body": "text_body",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-08T15:26:18.164059Z",
+     "updated_at": "2024-04-08T15:26:18.164059Z"
+    },
+    {
+     "id": 3,
+     "company_id": 2,
+     "name": "1 подстанция",
+     "description": "Подразделение СМП Тюмени",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-23T10:54:21.106464Z",
+     "updated_at": "2024-04-23T10:54:21.106464Z"
+    },
+    {
+     "id": 4,
+     "company_id": 2,
+     "name": "2 подстанция",
+     "description": "Подразделение СМП Тюмени",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-23T10:54:30.824882Z",
+     "updated_at": "2024-04-23T10:54:30.824882Z"
+    },
+    {
+     "id": 5,
+     "company_id": 2,
+     "name": "3 подстанция",
+     "description": "Подразделение СМП Тюмени",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-23T10:54:34.275497Z",
+     "updated_at": "2024-04-23T10:54:34.275497Z"
+    },
+    {
+     "id": 6,
+     "company_id": 2,
+     "name": "4 подстанция",
+     "description": "Подразделение СМП Тюмени",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-23T10:54:38.274197Z",
+     "updated_at": "2024-04-23T10:54:38.274197Z"
+    },
+    {
+     "id": 7,
+     "company_id": 2,
+     "name": "Оперативный отдел",
+     "description": "Подразделение СМП Тюмени",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-23T10:54:53.532524Z",
+     "updated_at": "2024-04-23T10:54:53.532524Z"
+    },
+    {
+     "id": 8,
+     "company_id": 2,
+     "name": "АУП",
+     "description": "Подразделение СМП Тюмени",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-23T10:55:00.838984Z",
+     "updated_at": "2024-04-23T10:55:00.838984Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 2,
+     "name": "СМП Тюмень",
+     "description": "СМП Тюмень",
+     "is_active": true,
+     "company_id": 2,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-04-05T15:02:59.943671Z",
+     "updated_at": "2024-04-08T15:22:45.680518Z"
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "name": "First company",
+   "is_active": true,
+   "divisions": [],
+   "groups": [
+    {
+     "id": 1,
+     "name": "1 company group",
+     "description": "1 company group description",
+     "is_active": true,
+     "company_id": 1,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2023-02-19T18:54:03.724756Z",
+     "updated_at": "2023-02-19T18:54:03.724756Z"
+    }
+   ]
+  }
+ ],
+ "dev2": [
+  {
+   "id": 35,
+   "name": "Эвоген (демо)",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 20,
+     "company_id": 35,
+     "name": "Отдел генетики и пренатальной диагностики (демо)",
+     "description": "Акушеры-гинекологи и врачи-генетики",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-15T21:37:46.614371Z",
+     "updated_at": "2026-06-15T21:37:46.614371Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 35,
+     "name": "Пренатальная диагностика ДПО 2026",
+     "description": "Группа для курса 132 — ДПО программа Эвоген",
+     "is_active": true,
+     "company_id": 35,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-17T04:21:05.446635Z",
+     "updated_at": "2026-06-17T04:21:05.446635Z"
+    },
+    {
+     "id": 33,
+     "name": "Пренатальная диагностика 2026 (демо)",
+     "description": "Тестовая группа по генетике в акушерстве и гинекологии",
+     "is_active": true,
+     "company_id": 35,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-15T21:37:47.594302Z",
+     "updated_at": "2026-06-15T21:37:47.594302Z"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "name": "Гепатоцентр (демо)",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 19,
+     "company_id": 34,
+     "name": "Отделение инфекционных болезней (демо)",
+     "description": "Врачи-инфекционисты и ординаторы",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-15T09:58:20.057715Z",
+     "updated_at": "2026-06-15T09:58:20.057715Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 34,
+     "name": "Ординаторы гепатологии полный курс 2026 (демо)",
+     "description": "Учебная группа, полный адаптивный курс по вирусным гепатитам",
+     "is_active": true,
+     "company_id": 34,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-16T12:39:37.884348Z",
+     "updated_at": "2026-06-16T12:39:37.884348Z"
+    },
+    {
+     "id": 32,
+     "name": "Ординаторы инфекционных болезней 2026 (демо)",
+     "description": "Учебная группа по вирусным гепатитам",
+     "is_active": true,
+     "company_id": 34,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-15T09:58:20.978969Z",
+     "updated_at": "2026-06-15T09:58:20.978969Z"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "name": "Тест-клиника Нейро (демо)",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 18,
+     "company_id": 33,
+     "name": "Учебный отдел нейрохирургии (демо)",
+     "description": "Подразделение для тестовых ординаторов",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-14T23:42:46.09047Z",
+     "updated_at": "2026-06-14T23:42:46.09047Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 31,
+     "name": "Тестовая группа ординаторов (демо)",
+     "description": "Учебная группа для проверки адаптивного курса",
+     "is_active": true,
+     "company_id": 33,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-14T23:42:46.549446Z",
+     "updated_at": "2026-06-14T23:42:46.549446Z"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "name": "test_org",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 17,
+     "company_id": 32,
+     "name": "Основное подразделение",
+     "description": "Тестовое подразделение",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-11T13:47:08.012206Z",
+     "updated_at": "2026-06-11T13:47:08.012206Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 30,
+     "name": "Тестовая группа",
+     "description": "Группа для доступа к курсам",
+     "is_active": true,
+     "company_id": 32,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-06-11T13:47:08.07741Z",
+     "updated_at": "2026-06-11T13:47:08.07741Z"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Тестовая организация 2",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 8,
+     "company_id": 12,
+     "name": "Подразделение 1",
+     "description": "fdfds",
+     "is_active": true,
+     "title": "Подразделение 1",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-29T08:34:28.345152Z",
+     "updated_at": "2025-04-10T06:41:09.826747Z"
+    },
+    {
+     "id": 9,
+     "company_id": 12,
+     "name": "Подразделение 2",
+     "description": "",
+     "is_active": true,
+     "title": "Подразделение 2",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-29T08:35:10.734093Z",
+     "updated_at": "2024-11-29T08:35:10.734093Z"
+    },
+    {
+     "id": 16,
+     "company_id": 12,
+     "name": "Отдел 7",
+     "description": "Описание",
+     "is_active": true,
+     "title": "",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2025-04-10T08:24:06.490799Z",
+     "updated_at": "2025-04-10T08:24:06.490799Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 29,
+     "name": "gggroup",
+     "description": "",
+     "is_active": true,
+     "company_id": 12,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2026-01-21T09:47:50.587657Z",
+     "updated_at": "2026-01-21T09:47:50.587657Z"
+    },
+    {
+     "id": 28,
+     "name": "Тестовая группа123",
+     "description": "",
+     "is_active": true,
+     "company_id": 12,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-29T09:05:37.344849Z",
+     "updated_at": "2024-11-29T09:05:37.344849Z"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "Кущёвский Медицинский Колледж",
+   "is_active": true,
+   "divisions": [],
+   "groups": []
+  },
+  {
+   "id": 10,
+   "name": "tg-test",
+   "is_active": true,
+   "divisions": [],
+   "groups": [
+    {
+     "id": 26,
+     "name": "firstaid",
+     "description": "",
+     "is_active": true,
+     "company_id": 10,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-11-07T08:14:48.654956Z",
+     "updated_at": "2024-11-07T08:14:48.654956Z"
+    },
+    {
+     "id": 25,
+     "name": "tg-test",
+     "description": "",
+     "is_active": true,
+     "company_id": 10,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-10-21T09:23:08.752195Z",
+     "updated_at": "2024-10-21T09:23:08.752195Z"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "СМП НН",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 6,
+     "company_id": 9,
+     "name": "Подстанция 1",
+     "description": "Подстанция 1 description",
+     "is_active": true,
+     "title": "Подстанция 1 title",
+     "subtitle": "Подстанция 1 subtitle",
+     "text_body": "Подстанция 1 text_body",
+     "image_url_1": "Подстанция 1 image_url_1",
+     "image_url_2": "Подстанция 1 image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-10-14T10:57:11.632073Z",
+     "updated_at": "2024-10-14T10:57:11.632073Z"
+    },
+    {
+     "id": 7,
+     "company_id": 9,
+     "name": "Подстанция 2",
+     "description": "Подстанция 2 description",
+     "is_active": true,
+     "title": "Подстанция 2 title",
+     "subtitle": "Подстанция 2 subtitle",
+     "text_body": "Подстанция 2 text_body",
+     "image_url_1": "Подстанция 2 image_url_1",
+     "image_url_2": "Подстанция 2 image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-10-14T10:57:55.564045Z",
+     "updated_at": "2024-10-14T10:57:55.564045Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 24,
+     "name": "Group_company_9",
+     "description": "Общая группа для отделов компании 9",
+     "is_active": true,
+     "company_id": 9,
+     "is_division": true,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-10-14T12:17:13.086767Z",
+     "updated_at": "2024-10-14T12:37:52.340636Z"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "СКОРАЯ МЕДИЦИНСКАЯ ПОМОЩЬ. Н.Новгород и область",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 4,
+     "company_id": 8,
+     "name": "СМП НН",
+     "description": "",
+     "is_active": true,
+     "title": "СМП НН",
+     "subtitle": "",
+     "text_body": "",
+     "image_url_1": "",
+     "image_url_2": "",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-04T12:46:54.233818Z",
+     "updated_at": "2024-07-04T12:46:54.233818Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 16,
+     "name": "СМП Дзержинск",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-04T12:45:29.756049Z",
+     "updated_at": "2024-07-04T12:45:29.756049Z"
+    },
+    {
+     "id": 15,
+     "name": "СМП НН. Подстанция 2",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-04T12:45:18.138757Z",
+     "updated_at": "2024-07-04T12:45:18.138757Z"
+    },
+    {
+     "id": 14,
+     "name": "СМП НН. Подстанция 1",
+     "description": "",
+     "is_active": true,
+     "company_id": 8,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-07-04T12:45:11.555314Z",
+     "updated_at": "2024-07-04T12:45:11.555314Z"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "Инфекционная клиническая больница Киров",
+   "is_active": true,
+   "divisions": [],
+   "groups": []
+  },
+  {
+   "id": 6,
+   "name": "Министерство тестов",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 2,
+     "company_id": 6,
+     "name": "Тестовый департамент 1",
+     "description": "Тестовый департамент 1 description",
+     "is_active": true,
+     "title": "Тестовый департамент 1 title",
+     "subtitle": "Тестовый департамент 1 subtitle",
+     "text_body": "Тестовый департамент 1 text_body",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-05-30T14:04:52.152692Z",
+     "updated_at": "2024-05-30T14:04:52.152692Z"
+    },
+    {
+     "id": 3,
+     "company_id": 6,
+     "name": "Тестовый департамент 2",
+     "description": "Тестовый департамент 2 description",
+     "is_active": true,
+     "title": "Тестовый департамент 2 title",
+     "subtitle": "Тестовый департамент 2 subtitle",
+     "text_body": "Тестовый департамент 2 text_body",
+     "image_url_1": "image_url_1",
+     "image_url_2": "image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-05-30T14:07:59.470403Z",
+     "updated_at": "2024-05-30T14:07:59.470403Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 13,
+     "name": "Группа министерства тестов ",
+     "description": "Тестовая группа ",
+     "is_active": true,
+     "company_id": 6,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-05-30T14:09:05.488803Z",
+     "updated_at": "2024-05-30T14:09:05.488803Z"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Zambon",
+   "is_active": true,
+   "divisions": [
+    {
+     "id": 1,
+     "company_id": 5,
+     "name": "zambon division-1",
+     "description": "zambon division-1 description",
+     "is_active": true,
+     "title": "zambon division-1 title",
+     "subtitle": "zambon division-1 subtitle",
+     "text_body": "zambon division-1 text_body",
+     "image_url_1": "zambon division-1 image_url_1",
+     "image_url_2": "zambon division-1 image_url_2",
+     "parent_id": null,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2024-02-25T11:56:46.74237Z",
+     "updated_at": "2024-02-25T11:56:46.74237Z"
+    }
+   ],
+   "groups": [
+    {
+     "id": 6,
+     "name": "Замбон Платформа 1",
+     "description": "Платформа тестирования Замбон",
+     "is_active": true,
+     "company_id": 5,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2023-12-18T14:28:44.829446Z",
+     "updated_at": "2024-02-19T09:23:30.365859Z"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Congress",
+   "is_active": true,
+   "divisions": [],
+   "groups": [
+    {
+     "id": 5,
+     "name": "Аналитика конгресс",
+     "description": "",
+     "is_active": true,
+     "company_id": 4,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2023-08-18T15:25:08.418981Z",
+     "updated_at": "2023-08-18T15:26:52.467886Z"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Такеда",
+   "is_active": true,
+   "divisions": [],
+   "groups": [
+    {
+     "id": 4,
+     "name": "Группа Такеда",
+     "description": "Группа для компании Такеда",
+     "is_active": true,
+     "company_id": 3,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2023-08-01T19:20:11.843083Z",
+     "updated_at": "2023-08-15T12:08:30.132076Z"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "company-2",
+   "is_active": true,
+   "divisions": [],
+   "groups": [
+    {
+     "id": 3,
+     "name": "group-2",
+     "description": "group-2 Описание Описание",
+     "is_active": true,
+     "company_id": 2,
+     "is_division": false,
+     "created_by": "admin",
+     "updated_by": "admin",
+     "created_at": "2023-02-06T19:32:08.032124Z",
+     "updated_at": "2023-02-06T22:32:17.881351Z"
+    }
+   ]
+  }
+ ]
+}
