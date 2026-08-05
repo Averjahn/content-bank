@@ -15,12 +15,13 @@ const state = {
 const $ = (sel) => document.querySelector(sel)
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
 const isLive = (t) => !t.flags.some((f) => JUNK.includes(f))
-const plural = (n, forms) => {
+/** Форма слова без самого числа: число уже стоит отдельной колонкой. */
+const word = (n, forms) => {
   const num = Math.abs(n) % 100, last = num % 10
-  if (num > 10 && num < 20) return `${n} ${forms[2]}`
-  if (last > 1 && last < 5) return `${n} ${forms[1]}`
-  if (last === 1) return `${n} ${forms[0]}`
-  return `${n} ${forms[2]}`
+  if (num > 10 && num < 20) return forms[2]
+  if (last > 1 && last < 5) return forms[1]
+  if (last === 1) return forms[0]
+  return forms[2]
 }
 
 /* ─────────────────────────── загрузка ─────────────────────────── */
@@ -36,6 +37,7 @@ fetch('data/bank.json')
     renderOverview()
     renderTable()
     renderCourses()
+    renderDownloads()
     renderFoot()
   })
   .catch(() => {
@@ -86,9 +88,9 @@ function renderOverview() {
   const big = [...live].sort((a, b) => (b.steps || 0) - (a.steps || 0))[0]
   const notes = [
     [junk, 'записей — мусор: архив, копии и служебные заготовки. В выгрузке помечены флагами и в списки не попадают.'],
-    [orphans.length, `${plural(orphans.length, ['кейс не подключён', 'кейса не подключены', 'кейсов не подключены'])} ни к одному курсу — готовый контент лежит без назначения.`],
-    [emptyCourses.length, 'курсов не содержат ни одного тренажёра.'],
-    [dupCourses.length, 'курсов выглядят техническими дублями («коп.», автогенерированные имена).'],
+    [orphans.length, `${word(orphans.length, ['кейс не подключён', 'кейса не подключены', 'кейсов не подключены'])} ни к одному курсу — готовый контент лежит без назначения.`],
+    [emptyCourses.length, `${word(emptyCourses.length, ['курс не содержит', 'курса не содержат', 'курсов не содержат'])} ни одного тренажёра.`],
+    [dupCourses.length, `${word(dupCourses.length, ['курс выглядит', 'курса выглядят', 'курсов выглядят'])} техническими дублями («коп.», автогенерированные имена).`],
     [big ? big.steps : 0, `шагов в самом объёмном кейсе — «${esc(big ? big.name : '')}».`],
   ]
   $('#notes').innerHTML = notes.map(([n, text]) => `
@@ -96,6 +98,49 @@ function renderOverview() {
       <span class="bar__val" style="text-align:left; font-size:15px; color:var(--accent); font-weight:600">${n}</span>
       <span class="bar__name" style="white-space:normal">${text}</span>
     </div>`).join('')
+}
+
+/* ─────────────────────────── скачивание ─────────────────────────── */
+
+const FILES = [
+  ['data/tests.zip', 'Все кейсы с содержимым', 'ZIP · 3,9 МБ', '857 файлов: шаги сценария, тексты, варианты ответов'],
+  ['data/bank.json', 'Банк целиком', 'JSON · 372 КБ', 'тренажёры, курсы и связи между ними'],
+  ['data/content_bank.md', 'Читаемая выгрузка', 'Markdown · 173 КБ', 'сводка, курсы, кейсы по семействам — для диалога с моделью'],
+  ['data/content_bank_working.csv', 'Только рабочие кейсы', 'CSV · 124 КБ', '740 строк, семь колонок'],
+  ['data/content_bank.csv', 'Все кейсы со всеми полями', 'CSV · 168 КБ', '857 строк, включая архив и копии'],
+]
+
+function renderDownloads() {
+  $('#downloads').innerHTML = FILES.map(([href, title, meta, sub]) => `
+    <a class="dl__item" href="${href}" download>
+      <span class="dl__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+      </span>
+      <span class="dl__text"><b>${title}</b><span>${sub}</span></span>
+      <span class="dl__meta">${meta}</span>
+    </a>`).join('')
+}
+
+/** CSV по текущей выборке — то, что видно на экране после фильтров. */
+function downloadSelection() {
+  const rows = sorted(state.tests.filter(matches))
+  const head = ['сервер', 'id', 'название', 'тема', 'семейство', 'шагов', 'оценивается', 'курсы', 'флаги']
+  const cell = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`
+  const csv = [head.join(';')].concat(rows.map((t) => [
+    t.host, t.id, t.name, t.topic, t.family, t.steps ?? '', t.scored ?? '',
+    t.courses.join(' '), t.flags.join(', '),
+  ].map(cell).join(';'))).join('\n')
+  saveFile(new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' }),
+    `банк-выборка-${rows.length}.csv`)
+}
+
+function saveFile(blob, name) {
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = name
+  a.click()
+  setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
 /* ─────────────────────────── таблица ─────────────────────────── */
@@ -224,10 +269,42 @@ function openPanel(key) {
       ${courses.length
         ? courses.map((c) => `<div style="font-size:13.5px; margin-bottom:6px">${esc(c.name)} <span class="num" style="color:var(--ink-faint)">· id ${c.id}</span></div>`).join('')
         : '<p style="font-size:13.5px; color:var(--ink-soft); margin:0">Кейс не подключён ни к одному курсу — его можно взять в новую программу как есть.</p>'}
+      <h4>Сценарий</h4>
+      <div id="steps"><p style="font-size:13.5px; color:var(--ink-faint); margin:0">Загружаю шаги…</p></div>
+      <a class="dl__btn" href="data/tests/${t.host}-${t.id}.json" download>Скачать кейс (JSON)</a>
     </div>`
   $('#panel').classList.add('is-open')
   $('#backdrop').classList.add('is-open')
   $('#panelClose').addEventListener('click', closePanel)
+  loadSteps(t)
+}
+
+/** Шаги сценария подгружаются по клику — держать их все в памяти незачем. */
+function loadSteps(t) {
+  const box = $('#steps')
+  fetch(`data/tests/${t.host}-${t.id}.json`)
+    .then((r) => (r.ok ? r.json() : Promise.reject()))
+    .then((d) => {
+      if (!box.isConnected) return
+      if (!d.steps.length) {
+        box.innerHTML = '<p style="font-size:13.5px; color:var(--ink-faint); margin:0">В кейсе нет шагов.</p>'
+        return
+      }
+      box.innerHTML = d.steps.map((s) => `
+        <details class="step">
+          <summary><span class="step__n num">${s.n ?? '·'}</span> ${esc(s.title || s.name || 'Шаг')}</summary>
+          <div class="step__body">
+            ${s.text.map((x) => `<p>${esc(x).replace(/\n/g, '<br>')}</p>`).join('')}
+            ${s.lab.length ? `<table class="step__lab">${s.lab.map((r) => `<tr><td>${esc(r.name)}</td><td>${esc(r.value)}</td></tr>`).join('')}</table>` : ''}
+            ${s.answers.length ? `<ul class="step__answers">${s.answers.map((x) => `<li class="${x.correct ? 'is-right' : ''}">${esc(x.text)}</li>`).join('')}</ul>` : ''}
+            ${s.images.length ? s.images.map((u) => `<img class="step__img" src="${esc(u)}" alt="" loading="lazy">`).join('') : ''}
+            ${s.options.length ? `<p class="step__opts">Кнопки: ${s.options.map(esc).join(' · ')}</p>` : ''}
+          </div>
+        </details>`).join('')
+    })
+    .catch(() => {
+      if (box.isConnected) box.innerHTML = '<p style="font-size:13.5px; color:var(--crit); margin:0">Содержимое кейса не найдено в выгрузке.</p>'
+    })
 }
 
 function closePanel() {
@@ -296,6 +373,7 @@ document.querySelectorAll('th[data-sort]').forEach((th) => {
 })
 
 $('#more').addEventListener('click', () => { state.limit += PAGE; renderTable() })
+$('#dlSel').addEventListener('click', downloadSelection)
 $('#backdrop').addEventListener('click', closePanel)
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePanel() })
 

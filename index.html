@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=1">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -57,6 +57,16 @@
 
     <div class="card">
       <div class="card__head">
+        <h2>Скачать банк</h2>
+        <span>срез целиком, без обращения к платформе</span>
+      </div>
+      <div class="card__body">
+        <div class="dl" id="downloads"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__head">
         <h2>Что стоит посмотреть</h2>
         <span>замечания по банку</span>
       </div>
@@ -75,6 +85,7 @@
       <div class="filters__sep"></div>
       <select class="chip" id="famSel"><option value="">Все семейства</option></select>
       <span class="count" id="count"></span>
+      <button class="chip" id="dlSel" title="CSV по текущим фильтрам">Скачать выборку</button>
     </div>
 
     <div class="table-wrap">
@@ -111,6 +122,6 @@
 <div class="backdrop" id="backdrop"></div>
 <aside class="panel" id="panel" aria-live="polite"></aside>
 
-<script src="app.js?v=1"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>
