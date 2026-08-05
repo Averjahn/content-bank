@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Банк контента платформы</title>
+<meta name="description" content="Все клинические тренажёры и курсы платформы: поиск по нозологии, объём кейсов, связь с курсами, кейсы вне курсов.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+<header class="top">
+  <div class="top__row">
+    <div class="brand">
+      <span class="brand__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12h4l1.5-5 3 10 2-8 1.5 3H21"/></svg>
+      </span>
+      <span>
+        <span class="brand__name">Банк контента</span>
+        <span class="brand__sub" id="stamp">загрузка…</span>
+      </span>
+    </div>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab is-active" data-view="overview" role="tab">Обзор</button>
+      <button class="tab" data-view="trainers" role="tab">Тренажёры</button>
+      <button class="tab" data-view="courses" role="tab">Курсы</button>
+    </nav>
+
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Поиск: нозология, название, id" autocomplete="off" aria-label="Поиск по банку">
+    </label>
+
+    <button class="icon-btn" id="theme" aria-label="Переключить тему">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 13a8.5 8.5 0 1 1-10-10 7 7 0 0 0 10 10z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- ────── ОБЗОР ────── -->
+  <section class="view" id="view-overview">
+    <div class="tiles" id="tiles"></div>
+
+    <div class="card">
+      <div class="card__head">
+        <h2>Семейства кейсов</h2>
+        <span>только рабочие · клик открывает список</span>
+      </div>
+      <div class="card__body"><div class="bars" id="families"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card__head">
+        <h2>Что стоит посмотреть</h2>
+        <span>замечания по банку</span>
+      </div>
+      <div class="card__body"><div class="bars" id="notes"></div></div>
+    </div>
+  </section>
+
+  <!-- ────── ТРЕНАЖЁРЫ ────── -->
+  <section class="view" id="view-trainers" hidden>
+    <div class="filters" id="filters">
+      <button class="chip is-on" data-f="live">Только рабочие</button>
+      <button class="chip" data-f="orphan">Вне курсов</button>
+      <div class="filters__sep"></div>
+      <button class="chip" data-f="tech2">tech2</button>
+      <button class="chip" data-f="dev2">dev2</button>
+      <div class="filters__sep"></div>
+      <select class="chip" id="famSel"><option value="">Все семейства</option></select>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="id">Кейс</th>
+            <th data-sort="name">Название</th>
+            <th class="topic" data-sort="topic">Тема / нозология</th>
+            <th class="family" data-sort="family">Семейство</th>
+            <th data-sort="steps" class="n">Шагов</th>
+            <th data-sort="courses" class="n">Курсы, id</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <button class="more" id="more" hidden>Показать ещё</button>
+    </div>
+  </section>
+
+  <!-- ────── КУРСЫ ────── -->
+  <section class="view" id="view-courses" hidden>
+    <div class="filters">
+      <button class="chip is-on" data-c="nonempty">С тренажёрами</button>
+      <button class="chip" data-c="adaptive">Адаптивные</button>
+      <span class="count" id="ccount"></span>
+    </div>
+    <div class="courses" id="courseList"></div>
+  </section>
+</main>
+
+<footer class="foot" id="foot"></footer>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="panel" id="panel" aria-live="polite"></aside>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
