@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -29,6 +29,7 @@
       <button class="tab is-active" data-view="overview" role="tab">Обзор</button>
       <button class="tab" data-view="trainers" role="tab">Тренажёры</button>
       <button class="tab" data-view="courses" role="tab">Курсы</button>
+      <button class="tab" data-view="coverage" role="tab">Покрытие программы</button>
     </nav>
 
     <label class="search">
@@ -100,6 +101,32 @@
     </div>
   </section>
 
+  <!-- ────── ПОКРЫТИЕ ПРОГРАММЫ ────── -->
+  <section class="view" id="view-coverage" hidden>
+    <div class="tiles" id="covTiles"></div>
+    <div class="filters">
+      <button class="chip" data-cov="gaps">Только дыры</button>
+      <select class="chip" id="blockSel"><option value="">Все блоки</option></select>
+      <span class="count" id="covCount"></span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Блок</th>
+            <th>Тема программы</th>
+            <th class="topic">Тематика</th>
+            <th class="family">Уровень</th>
+            <th class="n">Нужно</th>
+            <th class="n">Найдено</th>
+            <th>Кейсы из банка</th>
+          </tr>
+        </thead>
+        <tbody id="covRows"></tbody>
+      </table>
+    </div>
+  </section>
+
   <!-- ────── КУРСЫ ────── -->
   <section class="view" id="view-courses" hidden>
     <div class="filters">
@@ -116,6 +143,6 @@
 <div class="backdrop" id="backdrop"></div>
 <aside class="panel" id="panel" aria-live="polite"></aside>
 
-<script src="app.js?v=4"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

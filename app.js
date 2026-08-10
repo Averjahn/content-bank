@@ -10,6 +10,7 @@ const state = {
   q: '', filters: { live: true, orphan: false, tech2: false, dev2: false }, family: '',
   sort: { key: 'id', asc: false }, limit: PAGE,
   courseFilters: { nonempty: true, adaptive: false },
+  coverage: null, covGaps: false, covBlock: '',
 }
 
 const $ = (sel) => document.querySelector(sel)
@@ -38,6 +39,7 @@ fetch('data/bank.json')
     renderTable()
     renderCourses()
     renderFoot()
+    loadCoverage()
   })
   .catch(() => {
     $('#stamp').textContent = 'не удалось загрузить данные'
@@ -196,6 +198,79 @@ function renderCourses() {
     })
   })
 }
+
+/* ────────────────────── покрытие программы ────────────────────── */
+
+const MATCH_MIN = 0.6            // тот же порог, что в матчере
+
+function loadCoverage() {
+  fetch('data/coverage.json')
+    .then((r) => (r.ok ? r.json() : Promise.reject()))
+    .then((d) => {
+      state.coverage = d
+      const blocks = [...new Set(d.requirements.map((r) => r.block))]
+      $('#blockSel').insertAdjacentHTML('beforeend',
+        blocks.map((b) => `<option value="${esc(b)}">${esc(b)}</option>`).join(''))
+      renderCoverage()
+    })
+    .catch(() => { state.coverage = null })
+}
+
+const foundFor = (req) =>
+  (state.coverage.matches[req.topic] || []).filter((m) => m.score >= MATCH_MIN)
+
+function renderCoverage() {
+  const d = state.coverage
+  if (!d) return
+  const all = d.requirements
+  const covered = all.filter((r) => foundFor(r).length)
+  const partial = covered.filter((r) => foundFor(r).length < r.need)
+
+  $('#covTiles').innerHTML = [
+    [all.length, 'тем в программе', 'разобрано из документа кафедры'],
+    [covered.length, 'закрыто банком', 'есть хотя бы один подходящий кейс'],
+    [partial.length, 'закрыто частично', 'кейсов меньше, чем нужно теме'],
+    [all.length - covered.length, 'нужно генерировать', 'в банке ничего похожего нет'],
+  ].map(([n, label, sub]) =>
+    `<div class="tile"><b class="num">${n}</b><span>${label}</span><small>${sub}</small></div>`).join('')
+
+  const rows = all.filter((r) => {
+    if (state.covGaps && foundFor(r).length) return false
+    if (state.covBlock && r.block !== state.covBlock) return false
+    return true
+  })
+  $('#covCount').textContent = `${rows.length} из ${all.length}`
+
+  $('#covRows').innerHTML = rows.length ? rows.map((r) => {
+    const hits = foundFor(r).slice(0, r.need)
+    const cells = hits.length
+      ? hits.map((m) => `<div class="cov-hit"><span class="host ${m.host}">${m.host} ${m.id}</span>
+           <b>${esc(m.topic || m.name)}</b>
+           <span class="cov-meta">${esc(m.subject)} · ${esc(m.level || '—')} · совпадение ${m.score}</span></div>`).join('')
+      : '<span class="tag warn">нет подходящих — генерировать</span>'
+    return `<tr>
+      <td class="small">${esc(r.block)}</td>
+      <td class="name">${esc(r.topic)}</td>
+      <td class="topic">${esc(r.subject)}</td>
+      <td class="family">${esc(r.level)}</td>
+      <td class="n" data-label="нужно">${r.need}</td>
+      <td class="n" data-label="найдено">${hits.length}</td>
+      <td>${cells}</td>
+    </tr>`
+  }).join('') : '<tr><td colspan="7"><div class="empty">Ничего не найдено</div></td></tr>'
+}
+
+document.querySelectorAll('.chip[data-cov]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    state.covGaps = !state.covGaps
+    btn.classList.toggle('is-on', state.covGaps)
+    renderCoverage()
+  })
+})
+$('#blockSel').addEventListener('change', (e) => {
+  state.covBlock = e.target.value
+  renderCoverage()
+})
 
 /* ─────────────────────────── панель кейса ─────────────────────────── */
 
