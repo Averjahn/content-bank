@@ -11,8 +11,16 @@
       "purpose": "Один вход для трёх ролей: курс, отчёты и расписание открываются внутри выбранной роли, а не в разных интерфейсах",
       "layer": "frontend",
       "hook": "оболочка приложения: CabinetShell + navItems + маршруты /cab/<роль>/<страница>",
-      "owns": ["src/views/Cabinet", "src/components/Cabinet", "src/styles/cabinet.css"],
-      "reads": ["testing (курсы и тесты)", "report (статистика)", "access (роли)"],
+      "owns": [
+        "src/views/Cabinet",
+        "src/components/Cabinet",
+        "src/styles/cabinet.css"
+      ],
+      "reads": [
+        "testing (курсы и тесты)",
+        "report (статистика)",
+        "access (роли)"
+      ],
       "flag": "activeCabinet в localStorage",
       "status": "подключён",
       "owner": "мы"
@@ -23,8 +31,13 @@
       "purpose": "Преподаватель приходит на пару с пакетом: цель, обязательные тезисы, презентация и привязанный тест",
       "layer": "frontend",
       "hook": "раздел кабинета преподавателя /cab/teacher/lessons",
-      "owns": ["src/utils/lessonMaterials.js", "localStorage lessonTheses:v1"],
-      "reads": ["расписание кабинета"],
+      "owns": [
+        "src/utils/lessonMaterials.js",
+        "localStorage lessonTheses:v1"
+      ],
+      "reads": [
+        "расписание кабинета"
+      ],
       "flag": "нет, часть кабинета преподавателя",
       "status": "подключён",
       "owner": "мы"
@@ -35,8 +48,13 @@
       "purpose": "Одной командой снять с обоих серверов всё: кейсы с содержимым, курсы, справочники и организации",
       "layer": "pipeline",
       "hook": "стадия: админ-API → spo/out/dump + архив",
-      "owns": ["конвейер/spo/export_content_bank.py", "конвейер/spo/out/dump"],
-      "reads": ["admin API tech2 и dev2"],
+      "owns": [
+        "конвейер/spo/export_content_bank.py",
+        "конвейер/spo/out/dump"
+      ],
+      "reads": [
+        "admin API tech2 и dev2"
+      ],
       "flag": "--fast для быстрого прогона",
       "status": "подключён",
       "owner": "мы"
@@ -47,7 +65,10 @@
       "purpose": "Превратить документы учреждения в фрагменты с источником: то же, что в платформе будет делать загрузка в контент-банк",
       "layer": "pipeline",
       "hook": "стадия: папка документов → uzd/out/sources.json + медиатека",
-      "owns": ["конвейер/uzd/parse_sources.py", "конвейер/uzd/out"],
+      "owns": [
+        "конвейер/uzd/parse_sources.py",
+        "конвейер/uzd/out"
+      ],
       "reads": [],
       "flag": "--media для извлечения изображений",
       "status": "подключён",
@@ -59,8 +80,12 @@
       "purpose": "Показать, какие темы программы закрыты существующими кейсами, а какие придётся генерировать",
       "layer": "pipeline",
       "hook": "стадия: файл программы + bank.json → match.json",
-      "owns": ["конвейер/uzd/match_program.py"],
-      "reads": ["выгрузка банка"],
+      "owns": [
+        "конвейер/uzd/match_program.py"
+      ],
+      "reads": [
+        "выгрузка банка"
+      ],
       "flag": "--offline без обращения к модели",
       "status": "подключён",
       "owner": "мы"
@@ -71,8 +96,13 @@
       "purpose": "Куратор загружает документы и получает пакеты занятий и задания контроля, преподаватель их подтверждает",
       "layer": "pipeline",
       "hook": "стадии после матчинга: индекс → пакет занятия → тесты → автопроверки",
-      "owns": ["конвейер/uzd/runs"],
-      "reads": ["разбор документов", "банк контента"],
+      "owns": [
+        "конвейер/uzd/runs"
+      ],
+      "reads": [
+        "разбор документов",
+        "банк контента"
+      ],
       "flag": "ключ модели в окружении",
       "status": "предложен",
       "owner": "мы"
@@ -82,24 +112,36 @@
       "title": "Дерево тем как сущность",
       "purpose": "Связать программу, материалы, задания и балл через один граф тем вместо плоского списка шагов",
       "layer": "backend",
-      "hook": "новый домен topics + привязка узлов к шагам курса",
-      "owns": ["таблицы topics, topic_links"],
-      "reads": ["testing (курсы и тесты)"],
+      "hook": "домен internal/domain/topics + регистрация в cmd/server/app.go",
+      "owns": [
+        "таблицы topics, topic_links",
+        "internal/domain/topics"
+      ],
+      "reads": [
+        "testing (курсы и тесты)"
+      ],
       "flag": "feature.topic_tree",
-      "status": "предложен",
-      "owner": "не назначен"
+      "status": "в работе",
+      "owner": "мы"
     },
     {
       "id": "practice-track",
       "title": "Практический трек",
       "purpose": "Учитывать выполнение манипуляций: чек-лист протокола, норматив времени, попытки и оценку супервизора",
       "layer": "backend",
-      "hook": "новый домен practice + раздел кабинета преподавателя",
-      "owns": ["таблицы practice_sessions, practice_rubrics"],
-      "reads": ["user (группы)", "topics (темы)"],
+      "hook": "домен internal/domain/practice + раздел /cab/teacher/practice",
+      "owns": [
+        "таблицы practice_rubrics, practice_sessions",
+        "internal/domain/practice",
+        "src/utils/practiceTrack.js"
+      ],
+      "reads": [
+        "user (группы)",
+        "topics (темы)"
+      ],
       "flag": "feature.practice_track",
-      "status": "предложен",
-      "owner": "не назначен"
+      "status": "в работе",
+      "owner": "мы"
     }
   ]
 }
