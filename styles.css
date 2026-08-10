@@ -185,7 +185,17 @@ tbody tr:last-child td:first-child{border-bottom-left-radius:13px;}
 tbody tr:last-child td:last-child{border-bottom-right-radius:13px;}
 td.id{font-family:var(--mono); font-size:12px; color:var(--ink-faint); white-space:nowrap;}
 td.name{font-weight:500; min-width:210px;}
-td.topic{color:var(--ink-soft); min-width:200px;}
+td.topic{color:var(--ink-soft); min-width:180px;}
+/* описание — самая длинная колонка: держим её в трёх строках, полный текст
+   открывается в панели кейса */
+/* обрезка живёт на вложенном блоке: у ячейки таблицы -webkit-box ломает раскладку */
+td.plot{color:var(--ink-soft); font-size:12.5px; min-width:260px; max-width:420px;}
+td.plot span.clamp{
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;
+  overflow:hidden; line-height:1.45;
+}
+th.plot{min-width:260px;}
+.view-note{margin:0 0 14px; max-width:70ch; color:var(--ink-soft); font-size:13.5px; line-height:1.55;}
 td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap;}
 .host{
   display:inline-block; padding:2px 7px; border-radius:6px; font-family:var(--mono);
@@ -251,6 +261,8 @@ td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:righ
   tbody tr{padding:12px 14px; border-bottom:1px solid var(--line);}
   tbody td{border:none; padding:1px 0; min-width:0;}
   td.topic{display:block; font-size:12.5px;}
+  td.plot{max-width:none; min-width:0; margin:3px 0;}
+  td.plot span.clamp{-webkit-line-clamp:2;}
   td.family{display:none;}
   td.name{font-size:14.5px; margin:2px 0 4px;}
   td.n{display:inline-block; width:auto; margin-right:16px; font-size:12.5px; color:var(--ink-soft);}

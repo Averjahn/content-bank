@@ -10,7 +10,7 @@ const state = {
   q: '', filters: { live: true, orphan: false, tech2: false, dev2: false }, family: '',
   sort: { key: 'id', asc: false }, limit: PAGE,
   courseFilters: { nonempty: true, adaptive: false },
-  coverage: null, covGaps: false, covBlock: '',
+  programs: null, program: null, covGaps: false, covBlock: '',
   modules: null,
 }
 
@@ -119,7 +119,7 @@ function matches(t) {
   if (f.dev2 && t.host !== 'dev2') return false
   if (state.family && t.family !== state.family) return false
   if (state.q) {
-    const hay = `${t.id} ${t.name} ${t.topic} ${t.family}`.toLowerCase()
+    const hay = `${t.id} ${t.name} ${t.topic} ${t.family} ${t.plot || ''}`.toLowerCase()
     if (!state.q.split(/\s+/).every((w) => hay.includes(w))) return false
   }
   return true
@@ -146,6 +146,7 @@ function renderTable() {
       <td class="id"><span class="host ${t.host}">${t.host}</span> ${t.id}</td>
       <td class="name">${esc(t.name)}${t.flags.filter((f) => JUNK.includes(f)).map((f) => `<span class="tag crit">${f}</span>`).join('')}</td>
       <td class="topic">${esc(t.topic) || '<span style="color:var(--ink-faint)">—</span>'}</td>
+      <td class="plot">${t.plot ? `<span class="clamp">${esc(t.plot)}</span>` : '<span style="color:var(--ink-faint)">—</span>'}</td>
       <td class="family">${esc(t.family)}</td>
       <td class="n" data-label="шагов">${t.steps ?? '—'}</td>
       <td class="n" data-label="курсы">${t.courses.length ? t.courses.join(', ') : '<span class="tag warn">вне курсов</span>'}</td>
@@ -259,27 +260,37 @@ function loadCoverage() {
   fetch('data/coverage.json')
     .then((r) => (r.ok ? r.json() : Promise.reject()))
     .then((d) => {
-      state.coverage = d
-      const blocks = [...new Set(d.requirements.map((r) => r.block))]
-      $('#blockSel').insertAdjacentHTML('beforeend',
-        blocks.map((b) => `<option value="${esc(b)}">${esc(b)}</option>`).join(''))
+      state.programs = d.programs
+      state.program = d.programs[0]
+      $('#progSel').innerHTML = d.programs
+        .map((p, i) => `<option value="${i}">${esc(p.name)}</option>`).join('')
+      buildBlockSelect()
       renderCoverage()
     })
-    .catch(() => { state.coverage = null })
+    .catch(() => { state.programs = null })
+}
+
+/** Блоки — свои у каждой программы, список пересобирается при переключении. */
+function buildBlockSelect() {
+  const blocks = [...new Set(state.program.requirements.map((r) => r.block))]
+  state.covBlock = ''
+  $('#blockSel').innerHTML = '<option value="">Все блоки</option>'
+    + blocks.map((b) => `<option value="${esc(b)}">${esc(b)}</option>`).join('')
 }
 
 const foundFor = (req) =>
-  (state.coverage.matches[req.topic] || []).filter((m) => m.score >= MATCH_MIN)
+  (state.program.matches[req.topic] || []).filter((m) => m.score >= MATCH_MIN)
 
 function renderCoverage() {
-  const d = state.coverage
-  if (!d) return
-  const all = d.requirements
+  const p = state.program
+  if (!p) return
+  $('#progNote').textContent = p.note
+  const all = p.requirements
   const covered = all.filter((r) => foundFor(r).length)
   const partial = covered.filter((r) => foundFor(r).length < r.need)
 
   $('#covTiles').innerHTML = [
-    [all.length, 'тем в программе', 'разобрано из документа кафедры'],
+    [all.length, 'тем в программе', `разобрано из документа: ${p.short}`],
     [covered.length, 'закрыто банком', 'есть хотя бы один подходящий кейс'],
     [partial.length, 'закрыто частично', 'кейсов меньше, чем нужно теме'],
     [all.length - covered.length, 'нужно генерировать', 'в банке ничего похожего нет'],
@@ -321,6 +332,11 @@ document.querySelectorAll('.chip[data-cov]').forEach((btn) => {
 })
 $('#blockSel').addEventListener('change', (e) => {
   state.covBlock = e.target.value
+  renderCoverage()
+})
+$('#progSel').addEventListener('change', (e) => {
+  state.program = state.programs[Number(e.target.value)]
+  buildBlockSelect()
   renderCoverage()
 })
 

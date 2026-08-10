@@ -91,6 +91,7 @@
             <th data-sort="id">Кейс</th>
             <th data-sort="name">Название</th>
             <th class="topic" data-sort="topic">Тема / нозология</th>
+            <th class="plot">Краткое описание</th>
             <th class="family" data-sort="family">Семейство</th>
             <th data-sort="steps" class="n">Шагов</th>
             <th data-sort="courses" class="n">Курсы, id</th>
@@ -104,8 +105,10 @@
 
   <!-- ────── ПОКРЫТИЕ ПРОГРАММЫ ────── -->
   <section class="view" id="view-coverage" hidden>
+    <p class="view-note" id="progNote"></p>
     <div class="tiles" id="covTiles"></div>
     <div class="filters">
+      <select class="chip" id="progSel"></select>
       <button class="chip" data-cov="gaps">Только дыры</button>
       <select class="chip" id="blockSel"><option value="">Все блоки</option></select>
       <span class="count" id="covCount"></span>
