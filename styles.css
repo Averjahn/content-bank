@@ -93,9 +93,11 @@ button{cursor:pointer;}
 .brand__name{font-family:var(--head); font-weight:600; font-size:16.5px; letter-spacing:-.01em; white-space:nowrap;}
 .brand__sub{font-size:11.5px; color:var(--ink-faint); white-space:nowrap;}
 
-.tabs{display:flex; gap:2px; padding:3px; border-radius:11px; background:var(--surface-2);}
+.tabs{display:flex; gap:2px; padding:3px; border-radius:11px; background:var(--surface-2);
+  max-width:100%; overflow-x:auto; scrollbar-width:none;}
+.tabs::-webkit-scrollbar{display:none;}
 .tab{
-  padding:7px 14px; border:none; border-radius:8px; background:none;
+  padding:7px 14px; border:none; border-radius:8px; background:none; white-space:nowrap;
   color:var(--ink-faint); font-size:13.5px; font-weight:500;
 }
 .tab:hover{color:var(--ink);}
@@ -238,6 +240,9 @@ td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:righ
   .top__row{padding:10px 14px; gap:10px;}
   .brand__sub{display:none;}
   .dl-all{padding:9px 12px;}
+  .arch{padding:14px;}
+  .mod__facts{grid-template-columns:minmax(0,1fr); gap:2px;}
+  .mod__facts dt{padding-top:6px;}
   .dl-all span{display:none;}
   .wrap{padding:16px 14px 50px;}
   /* на телефоне таблица не помещается — строки становятся карточками */
@@ -300,3 +305,23 @@ td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; text-align:righ
 .cov-hit b{display:block; font-weight:500; color:var(--ink); margin:2px 0 1px;}
 .cov-meta{color:var(--ink-faint); font-size:11.5px;}
 td.small{font-size:12px; color:var(--ink-soft); min-width:120px;}
+
+/* ── Модули и схема архитектуры ── */
+.arch{margin:0 0 22px; padding:20px 22px; background:var(--surface);
+  border:1px solid var(--line); border-radius:14px; box-shadow:var(--sh-1);}
+.arch svg{display:block; width:100%; height:auto; color:var(--ink);}
+.arch__cap{margin:0 0 16px; font-size:13.5px; line-height:1.6; color:var(--ink-soft); max-width:88ch;}
+.arch__cap b{color:var(--ink);}
+
+.mods{display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:12px;}
+.mod{background:var(--surface); border:1px solid var(--line); border-radius:14px;
+  padding:16px 18px; box-shadow:var(--sh-1);}
+.mod--live{border-left:3px solid var(--ok);}
+.mod--draft{border-left:3px solid var(--warn);}
+.mod__head{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:8px;}
+.mod__head h3{margin:0; font-family:var(--head); font-weight:600; font-size:15.5px; line-height:1.3;}
+.mod__purpose{margin:0 0 12px; font-size:13px; line-height:1.55; color:var(--ink-soft);}
+.mod__facts{display:grid; grid-template-columns:92px minmax(0,1fr); gap:5px 12px; margin:0; font-size:12.5px;}
+.mod__facts dt{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--ink-faint); padding-top:2px;}
+.mod__facts dd{margin:0; color:var(--ink); overflow-wrap:anywhere;}

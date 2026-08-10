@@ -11,6 +11,7 @@ const state = {
   sort: { key: 'id', asc: false }, limit: PAGE,
   courseFilters: { nonempty: true, adaptive: false },
   coverage: null, covGaps: false, covBlock: '',
+  modules: null,
 }
 
 const $ = (sel) => document.querySelector(sel)
@@ -40,6 +41,7 @@ fetch('data/bank.json')
     renderCourses()
     renderFoot()
     loadCoverage()
+    loadModules()
   })
   .catch(() => {
     $('#stamp').textContent = 'не удалось загрузить данные'
@@ -197,6 +199,56 @@ function renderCourses() {
       btn.textContent = open ? 'свернуть ↑' : 'весь состав ↓'
     })
   })
+}
+
+/* ────────────────────────── модули ────────────────────────── */
+
+const LAYER_NAME = { backend: 'бэкенд', frontend: 'фронтенд', pipeline: 'конвейер' }
+
+function loadModules() {
+  fetch('data/modules.json')
+    .then((r) => (r.ok ? r.json() : Promise.reject()))
+    .then((d) => { state.modules = d; renderModules() })
+    .catch(() => { state.modules = null })
+}
+
+function renderModules() {
+  const d = state.modules
+  if (!d) return
+  const mods = d.modules
+  const live = mods.filter((m) => m.status === 'подключён')
+  const proposed = mods.filter((m) => m.status === 'предложен')
+  const noOwner = mods.filter((m) => m.owner === 'не назначен')
+
+  $('#modTiles').innerHTML = [
+    [mods.length, 'модулей в реестре', 'описаны по единому шаблону'],
+    [live.length, 'подключено', 'работают в платформе'],
+    [proposed.length, 'предложено', 'ждут разбора и владельца'],
+    [noOwner.length, 'без владельца', 'некому отвечать после подключения'],
+  ].map(([n, label, sub]) =>
+    `<div class="tile"><b class="num">${n}</b><span>${label}</span><small>${sub}</small></div>`).join('')
+
+  const order = { 'подключён': 0, 'в работе': 1, 'предложен': 2, 'выключен': 3 }
+  const sorted = [...mods].sort((a, b) =>
+    (order[a.status] ?? 9) - (order[b.status] ?? 9) || a.title.localeCompare(b.title))
+
+  $('#modList').innerHTML = sorted.map((m) => `
+    <article class="mod mod--${m.status === 'подключён' ? 'live' : 'draft'}">
+      <div class="mod__head">
+        <h3>${esc(m.title)}</h3>
+        <span class="tag ${m.status === 'подключён' ? 'ok' : 'warn'}">${esc(m.status)}</span>
+      </div>
+      <p class="mod__purpose">${esc(m.purpose)}</p>
+      <dl class="mod__facts">
+        <dt>Слой</dt><dd>${esc(LAYER_NAME[m.layer] || m.layer)}</dd>
+        <dt>Подключение</dt><dd>${esc(m.hook)}</dd>
+        ${m.owns && m.owns.length ? `<dt>Владеет</dt><dd>${m.owns.map(esc).join(', ')}</dd>` : ''}
+        ${m.reads && m.reads.length ? `<dt>Читает</dt><dd>${m.reads.map(esc).join(', ')}</dd>` : ''}
+        ${m.flag ? `<dt>Включение</dt><dd>${esc(m.flag)}</dd>` : ''}
+        <dt>Владелец</dt><dd>${m.owner === 'не назначен'
+          ? '<span class="tag warn">не назначен</span>' : esc(m.owner)}</dd>
+      </dl>
+    </article>`).join('')
 }
 
 /* ────────────────────── покрытие программы ────────────────────── */

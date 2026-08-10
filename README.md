@@ -45,3 +45,13 @@ python3 конвейер/spo/export_content_bank.py
 .venv_medical/bin/python конвейер/uzd/match_program.py --program "<файл программы>"
 cp конвейер/uzd/out/match.json <клон>/data/coverage.json
 ```
+
+## Модули
+
+Вкладка «Модули» — схема подключения и реестр: что подключено, что предложено,
+у чего нет владельца. Данные из `Job/modules/registry.json`; после правки реестра:
+
+```bash
+python3 modules/validate_module.py        # проверить манифесты и пересобрать registry.md
+cp modules/registry.json <клон>/data/modules.json
+```
